@@ -8,7 +8,55 @@
   </url>
   
   <url>
+    <loc>http://localhost:46445/thought/all-purpose-javascript-hammer/</loc>
+    <lastmod>2016-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/thought/software-quality/</loc>
+    <lastmod>2016-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/talk/oauth-with-angular-asp-net-web-api/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/thought/tactegic/</loc>
+    <lastmod>2015-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:46445/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/draft/d3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/tags/.net/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/tags/angular/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/tags/api/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/tags/authentication/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -18,8 +66,19 @@
   </url>
   
   <url>
+    <loc>http://localhost:46445/draft/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:46445/tags/linux/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/tags/oauth/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -37,7 +96,29 @@
   
   <url>
     <loc>http://localhost:46445/tags/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/talk/</loc>
+    <lastmod>2015-07-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/talks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/thought/</loc>
+    <lastmod>2016-02-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:46445/thoughts/</loc>
     <priority>0</priority>
   </url>
   

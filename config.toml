@@ -5,6 +5,8 @@ theme = "basics-mod"
 
 [taxonomies]
   tag = "tags"
+  thought = "thoughts"
+  talk = "talks"
 
 [params]
     author = "Stuart Zahn"
