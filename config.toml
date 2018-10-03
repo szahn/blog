@@ -1,0 +1,12 @@
+baseURL = "http://blog.stuartzahn.net"
+languageCode = "en-us"
+title = "Blog"
+theme = "basics-mod"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+    author = "Stuart Zahn"
+    authorUrl = "http://stuartzahn.net"
+    github = "szahn"

@@ -1,0 +1,1 @@
+hugo server -wDs ./ -d dev & xdg-open http://localhost:1313/
