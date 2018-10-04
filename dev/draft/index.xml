@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drafts on Blog</title>
-    <link>http://localhost:39305/draft/</link>
+    <link>http://localhost:46341/draft/</link>
     <description>Recent content in Drafts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:39305/draft/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:46341/draft/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://localhost:39305/draft/d3/</link>
+      <link>http://localhost:46341/draft/d3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/draft/d3/</guid>
+      <guid>http://localhost:46341/draft/d3/</guid>
       <description>Enter/Exit pattern
 The point is that trends and patterns are important, but so are outliers, missing data points, and inconsistencies. http://flowingdata.com/2010/03/04/think-like-a-statistician-without-the-math/ Mike Bostock http://bost.ocks.org/mike/ http://bl.ocks.org/mbostock
 Elijah Meeks http://elijahmeeks.com/#project-page Adobe Color Wheel for Pallete generation https://color.adobe.com/create/color-wheel/
@@ -27,6 +27,53 @@ React Viz https://react.rocks/
 http://flowingdata.com/
 http://www.sitepoint.com/twelve-javascript-libraries-data-visualization/?utm_content=buffer94d43&amp;amp;utm_medium=social&amp;amp;utm_source=facebook.com&amp;amp;utm_campaign=buffer
 successor = TauCHarts = https://github.com/TargetProcess/tauCharts</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:46341/draft/high-performance-excel-like-data-grids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/draft/high-performance-excel-like-data-grids/</guid>
+      <description>High performance grids in React
+ DevExpres vs. Telerik React Virtualized https://github.com/energydrink9/functional-data-grid?utm_campaign=Fullstack%2BReact&amp;amp;utm_medium=email&amp;amp;utm_source=Fullstack_React_115  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:46341/draft/interview-questions-answers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/draft/interview-questions-answers/</guid>
+      <description>Data structures Performance and Big O Notation What&amp;rsquo;s your biggest weakness? Hard to answer questions (Estimate weight of plane)
+Remember that you are also interviewing the company. Don&amp;rsquo;t let the imposter syndrome get you and feel you aren&amp;rsquo;t qualified. Check that you are a good fit for the company culture by meeting your team as part of the process and do a gut check.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:46341/draft/oauth-authentication-implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/draft/oauth-authentication-implementation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:46341/draft/remote-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/draft/remote-work/</guid>
+      <description>Problem solving requires close proximity to the problem, although remote work is popular, it increases the distance requires to collaborate on a solution.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:46341/draft/single-page-application-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/draft/single-page-application-development/</guid>
+      <description></description>
     </item>
     
   </channel>

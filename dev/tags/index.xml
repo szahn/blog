@@ -2,93 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog</title>
-    <link>http://localhost:39305/tags/</link>
+    <link>http://localhost:46341/tags/</link>
     <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:39305/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:46341/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>.Net</title>
-      <link>http://localhost:39305/tags/.net/</link>
+      <link>http://localhost:46341/tags/.net/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/.net/</guid>
+      <guid>http://localhost:46341/tags/.net/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Angular</title>
-      <link>http://localhost:39305/tags/angular/</link>
+      <link>http://localhost:46341/tags/angular/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/angular/</guid>
+      <guid>http://localhost:46341/tags/angular/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Api</title>
-      <link>http://localhost:39305/tags/api/</link>
+      <link>http://localhost:46341/tags/api/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/api/</guid>
+      <guid>http://localhost:46341/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Authentication</title>
-      <link>http://localhost:39305/tags/authentication/</link>
+      <link>http://localhost:46341/tags/authentication/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/authentication/</guid>
+      <guid>http://localhost:46341/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cms</title>
+      <link>http://localhost:46341/tags/cms/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dnn</title>
+      <link>http://localhost:46341/tags/dnn/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/dnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://localhost:46341/tags/git/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://localhost:39305/tags/linux/</link>
+      <link>http://localhost:46341/tags/linux/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/linux/</guid>
+      <guid>http://localhost:46341/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oauth</title>
-      <link>http://localhost:39305/tags/oauth/</link>
+      <link>http://localhost:46341/tags/oauth/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/oauth/</guid>
+      <guid>http://localhost:46341/tags/oauth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ocr</title>
+      <link>http://localhost:46341/tags/ocr/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/ocr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pdf</title>
+      <link>http://localhost:46341/tags/pdf/</link>
+      <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/pdf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shell</title>
-      <link>http://localhost:39305/tags/shell/</link>
+      <link>http://localhost:46341/tags/shell/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/shell/</guid>
+      <guid>http://localhost:46341/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svn</title>
+      <link>http://localhost:46341/tags/svn/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/svn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unzip</title>
-      <link>http://localhost:39305/tags/unzip/</link>
+      <link>http://localhost:46341/tags/unzip/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/unzip/</guid>
+      <guid>http://localhost:46341/tags/unzip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:46341/tags/windows/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zip</title>
-      <link>http://localhost:39305/tags/zip/</link>
+      <link>http://localhost:46341/tags/zip/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/tags/zip/</guid>
+      <guid>http://localhost:46341/tags/zip/</guid>
       <description></description>
     </item>
     

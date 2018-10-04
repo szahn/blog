@@ -2,41 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on Blog</title>
-    <link>http://localhost:1313/thought/</link>
+    <link>http://localhost:46341/thought/</link>
     <description>Recent content in Thoughts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Feb 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/thought/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:46341/thought/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>All Purpose Javascript Hammer</title>
-      <link>http://localhost:1313/thought/all-purpose-javascript-hammer/</link>
+      <link>http://localhost:46341/thought/all-purpose-javascript-hammer/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/all-purpose-javascript-hammer/</guid>
+      <guid>http://localhost:46341/thought/all-purpose-javascript-hammer/</guid>
       <description>When all you have is a hammer, everything can be hammered down. But not every problem needs to be solved with a hammer. That&amp;rsquo;s why it&amp;rsquo;s important to understand how different languages solve problems differently (https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r). To learn a new ways of reasoning about software, learn new programming languages with different styles like functional, and dynamically typed languages such as Javascript.
 JavaScript is an excellent language to learn new ways of thinking, building and deploying software.</description>
     </item>
     
     <item>
       <title>Software Quality</title>
-      <link>http://localhost:1313/thought/software-quality/</link>
+      <link>http://localhost:46341/thought/software-quality/</link>
       <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/software-quality/</guid>
+      <guid>http://localhost:46341/thought/software-quality/</guid>
       <description>Software Quality: There are known software quality attributes such as performance and maintainability but good software quality is really achieved not by adding more features but removing just enough features. Since quality is ultimately measured by the user experience (http://wiki.c2.com/?DoesSoftwareQualityMeanNoBugs), what matter is how easy it is for the user to accomplish a task.</description>
     </item>
     
     <item>
       <title>Tactegic</title>
-      <link>http://localhost:1313/thought/tactegic/</link>
+      <link>http://localhost:46341/thought/tactegic/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/tactegic/</guid>
+      <guid>http://localhost:46341/thought/tactegic/</guid>
       <description>I first heard about the word Tactegic from this blog post (https://genehughson.wordpress.com/2015/01/03/who-needs-architects-when-tactics-do-not-add-up-to-strategy/). Without focus, lots of little tactical successes can breed strategic defeat. When it comes to programming, the word hacking seems related to this idea. When you&amp;rsquo;re hacking away, you&amp;rsquo;re usually taking as many shortcuts as you can, and fumbling your way towards some kind of ad-hoc fix. Hacking can be good with a degree of focus and strategy. In fact, some hacks may lead to actual products in the end.</description>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>http://localhost:46341/thought/architecture/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/thought/architecture/</guid>
+      <description>Good architecture is reductionistic and about decomposing bigger pieces into smaller ones, but not too small or too large to exceed the benefit. It&amp;rsquo;s about encapsulating volatile logic and data into proper boundaries.</description>
+    </item>
+    
+    <item>
+      <title>Creativity</title>
+      <link>http://localhost:46341/thought/creativity/</link>
+      <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/thought/creativity/</guid>
+      <description>Creative people are excellent observers. The difference between designers and developers is how they see and interpret the world. (https://webdesign.tutsplus.com/articles/the-concept-of-creativity--webdesign-11727)
+ &amp;ldquo;Curiosity about life in all of its aspects, I think, is still the secret of great creative people&amp;rdquo; – Leo Burnett Creativity lies in the power to do unusual (useful) things  </description>
     </item>
     
   </channel>

@@ -2,23 +2,83 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog</title>
-    <link>http://localhost:39305/post/</link>
+    <link>http://localhost:46341/post/</link>
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:39305/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:46341/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to unzip files in Linux shell</title>
-      <link>http://localhost:39305/post/how-unzip-files-in-directory-linux-shell/</link>
+      <link>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39305/post/how-unzip-files-in-directory-linux-shell/</guid>
+      <guid>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</guid>
       <description>To unzip multiple files in a directory, run the following:
 for f in *.zip; do unzip $f -d ${f::-4}; done</description>
+    </item>
+    
+    <item>
+      <title>Migrating a Legacy Repository from SVN to Git on Windows</title>
+      <link>http://localhost:46341/post/migrating-legacy-repository-from-svn-git/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/migrating-legacy-repository-from-svn-git/</guid>
+      <description>There may come a time when you stumble upon an ancient SVN repository nested with multiple projects and need to efficiently collaborate with others on a single project in that repository. Well, we all know Git is better than SVN in many ways. It&amp;rsquo;s faster and the decentralized, distributed nature of Git provides better security and redundancy. We all remember the story of codespaces.com, where a single hacker hacked into their Amazon servers in the cloud and they were forced to shut down.</description>
+    </item>
+    
+    <item>
+      <title>Using the Yelp Api</title>
+      <link>http://localhost:46341/post/using-the-yelp-api/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/using-the-yelp-api/</guid>
+      <description>Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.
+I wanted to produce a final solution all Node JS and Angular JS.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing .NET Assembly Architecture</title>
+      <link>http://localhost:46341/post/analyzing-net-assembly-architecture/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/analyzing-net-assembly-architecture/</guid>
+      <description>Have you ever installed an IIS website only to get an error that there is an assembly with the incorrect format in the bin folder? How about when you&amp;rsquo;re installing a window service and you&amp;rsquo;re not sure if the application is 32-bit or 64-bit? Sure, there are free tools like the Telerik Decompiler that will let you poke around those .dlls to see what cpu architecture they are built for, but what if you have dozens of dlls in one folder?</description>
+    </item>
+    
+    <item>
+      <title>Using DotNetNuke (DNN) CMS</title>
+      <link>http://localhost:46341/post/using-dnn-cms/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/using-dnn-cms/</guid>
+      <description>DotNetNuke (https://www.dnnsoftware.com/) is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
+Review UX Design Guidelines (http://uxguide.dotnetnuke.com/CSSFoundation.aspx). Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
+    </item>
+    
+    <item>
+      <title>Optical Character Recognition</title>
+      <link>http://localhost:46341/post/optical-character-recognition/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/optical-character-recognition/</guid>
+      <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
+From five years of experience with OCR engines, the following are the recommendations in order:
+ Tesseract (https://github.com/tesseract-ocr/tesseract) Free and open sourced by Google OpenText RecoStar (http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture Recognition Engine) + Design Studio Abbyy (http://www.</description>
+    </item>
+    
+    <item>
+      <title>PDF Document Processing</title>
+      <link>http://localhost:46341/post/processing-pdfs/</link>
+      <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:46341/post/processing-pdfs/</guid>
+      <description>If ImageMagick (http://www.imagemagick.org/script/index.php) is the standard open source solution for image processing, then GhostScript (https://www.ghostscript.com/) is the equivalent for PDF processing.
+iText is an open source and commercial PDF library. You can view videos on the iText Summit here: http://itextpdf.com/summit.php. These are great to watch if you work with PDFs.
+PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.</description>
     </item>
     
   </channel>
