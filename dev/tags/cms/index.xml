@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cms on Blog</title>
-    <link>http://localhost:46341/tags/cms/</link>
+    <link>http://localhost:43157/tags/cms/</link>
     <description>Recent content in Cms on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:46341/tags/cms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:43157/tags/cms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using DotNetNuke (DNN) CMS</title>
-      <link>http://localhost:46341/post/using-dnn-cms/</link>
+      <link>http://localhost:43157/post/using-dnn-cms/</link>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/using-dnn-cms/</guid>
+      <guid>http://localhost:43157/post/using-dnn-cms/</guid>
       <description>DotNetNuke (https://www.dnnsoftware.com/) is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
 Review UX Design Guidelines (http://uxguide.dotnetnuke.com/CSSFoundation.aspx). Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
     </item>

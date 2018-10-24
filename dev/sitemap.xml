@@ -3,243 +3,261 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</loc>
+    <loc>http://localhost:45933/post/how-unzip-files-in-directory-linux-shell/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/all-purpose-javascript-hammer/</loc>
+    <loc>http://localhost:45933/thought/all-purpose-javascript-hammer/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/software-quality/</loc>
+    <loc>http://localhost:45933/thought/software-quality/</loc>
     <lastmod>2016-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/talk/oauth-with-angular-asp-net-web-api/</loc>
+    <loc>http://localhost:45933/talk/oauth-with-angular-asp-net-web-api/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/tactegic/</loc>
+    <loc>http://localhost:45933/thought/tactegic/</loc>
     <lastmod>2015-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/architecture/</loc>
+    <loc>http://localhost:45933/thought/architecture/</loc>
     <lastmod>2015-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/migrating-legacy-repository-from-svn-git/</loc>
+    <loc>http://localhost:45933/post/migrating-legacy-repository-from-svn-git/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/using-the-yelp-api/</loc>
+    <loc>http://localhost:45933/post/using-the-yelp-api/</loc>
     <lastmod>2014-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/analyzing-net-assembly-architecture/</loc>
+    <loc>http://localhost:45933/post/analyzing-net-assembly-architecture/</loc>
     <lastmod>2014-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/using-dnn-cms/</loc>
+    <loc>http://localhost:45933/post/using-dnn-cms/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/optical-character-recognition/</loc>
+    <loc>http://localhost:45933/book/monk-and-merchant/</loc>
+    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:45933/post/optical-character-recognition/</loc>
     <lastmod>2013-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/processing-pdfs/</loc>
+    <loc>http://localhost:45933/post/processing-pdfs/</loc>
     <lastmod>2013-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/creativity/</loc>
+    <loc>http://localhost:45933/thought/creativity/</loc>
     <lastmod>2013-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:46341/about/</loc>
+    <loc>http://localhost:45933/about/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/books/</loc>
+    <loc>http://localhost:45933/draft/d3/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/d3/</loc>
+    <loc>http://localhost:45933/draft/high-performance-excel-like-data-grids/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/high-performance-excel-like-data-grids/</loc>
+    <loc>http://localhost:45933/draft/interview-questions-answers/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/interview-questions-answers/</loc>
+    <loc>http://localhost:45933/draft/oauth-authentication-implementation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/oauth-authentication-implementation/</loc>
+    <loc>http://localhost:45933/draft/remote-work/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/remote-work/</loc>
+    <loc>http://localhost:45933/draft/single-page-application-development/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/single-page-application-development/</loc>
+    <loc>http://localhost:45933/quotes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:46341/quotes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:46341/tags/.net/</loc>
+    <loc>http://localhost:45933/tags/.net/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/angular/</loc>
+    <loc>http://localhost:45933/tags/angular/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/api/</loc>
+    <loc>http://localhost:45933/tags/api/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/authentication/</loc>
+    <loc>http://localhost:45933/tags/authentication/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/</loc>
+    <loc>http://localhost:45933/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/cms/</loc>
+    <loc>http://localhost:45933/book/</loc>
+    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:45933/books/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:45933/tags/cms/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/dnn/</loc>
+    <loc>http://localhost:45933/tags/dnn/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/draft/</loc>
+    <loc>http://localhost:45933/draft/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/git/</loc>
+    <loc>http://localhost:45933/tags/git/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/linux/</loc>
+    <loc>http://localhost:45933/tags/linux/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/oauth/</loc>
+    <loc>http://localhost:45933/tags/oauth/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/ocr/</loc>
+    <loc>http://localhost:45933/tags/ocr/</loc>
     <lastmod>2013-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/pdf/</loc>
+    <loc>http://localhost:45933/tags/pdf/</loc>
     <lastmod>2013-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/post/</loc>
+    <loc>http://localhost:45933/post/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/shell/</loc>
+    <loc>http://localhost:45933/tags/self-help/</loc>
+    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:45933/tags/shell/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/svn/</loc>
+    <loc>http://localhost:45933/tags/svn/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/</loc>
+    <loc>http://localhost:45933/tags/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/talk/</loc>
+    <loc>http://localhost:45933/talk/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/talks/</loc>
+    <loc>http://localhost:45933/talks/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thought/</loc>
+    <loc>http://localhost:45933/thought/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/thoughts/</loc>
+    <loc>http://localhost:45933/thoughts/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/unzip/</loc>
+    <loc>http://localhost:45933/tags/unzip/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/windows/</loc>
+    <loc>http://localhost:45933/tags/windows/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:46341/tags/zip/</loc>
+    <loc>http://localhost:45933/tags/zip/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

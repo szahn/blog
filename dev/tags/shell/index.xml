@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Blog</title>
-    <link>http://localhost:46341/tags/shell/</link>
+    <link>http://localhost:43157/tags/shell/</link>
     <description>Recent content in Shell on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:46341/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:43157/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to unzip files in Linux shell</title>
-      <link>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</link>
+      <link>http://localhost:43157/post/how-unzip-files-in-directory-linux-shell/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</guid>
+      <guid>http://localhost:43157/post/how-unzip-files-in-directory-linux-shell/</guid>
       <description>To unzip multiple files in a directory, run the following:
 for f in *.zip; do unzip $f -d ${f::-4}; done</description>
     </item>

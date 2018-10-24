@@ -2,13 +2,55 @@ baseURL = "http://blog.stuartzahn.net"
 languageCode = "en-us"
 title = "Blog"
 theme = "basics-mod"
+SectionPagesMenu = "main"
 
 [taxonomies]
   tag = "tags"
   thought = "thoughts"
   talk = "talks"
+  book = "books"
 
 [params]
     author = "Stuart Zahn"
     authorUrl = "http://stuartzahn.net"
     github = "szahn"
+    linkedin = "stuartzahn"
+
+
+[menu]
+    [[menu.main]]
+    identifier = "articles"
+    name       = "Articles"
+    url        = "/"
+    weight     = 1
+
+
+    [[menu.main]]
+    identifier = "talk"
+    name       = "Talks"
+    url        = "/talk"
+    weight     = 2
+
+    [[menu.main]]
+    identifier = "thought"
+    name       = "Thoughts"
+    url        = "/thought"
+    weight     = 3
+
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+    weight     = 4
+
+    [[menu.main]]
+    identifier = "book"
+    name       = "Books"
+    url        = "/book"
+    weight     = 5
+
+    [[menu.main]]
+    identifier = "quote"
+    name       = "Quotes"
+    url        = "/quotes"
+    weight     = 6

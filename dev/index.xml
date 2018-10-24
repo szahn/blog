@@ -2,116 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
-    <link>http://localhost:46341/</link>
+    <link>http://localhost:45933/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:46341/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:45933/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to unzip files in Linux shell</title>
-      <link>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</link>
+      <link>http://localhost:45933/post/how-unzip-files-in-directory-linux-shell/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/how-unzip-files-in-directory-linux-shell/</guid>
+      <guid>http://localhost:45933/post/how-unzip-files-in-directory-linux-shell/</guid>
       <description>To unzip multiple files in a directory, run the following:
 for f in *.zip; do unzip $f -d ${f::-4}; done</description>
     </item>
     
     <item>
       <title>All Purpose Javascript Hammer</title>
-      <link>http://localhost:46341/thought/all-purpose-javascript-hammer/</link>
+      <link>http://localhost:45933/thought/all-purpose-javascript-hammer/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/thought/all-purpose-javascript-hammer/</guid>
+      <guid>http://localhost:45933/thought/all-purpose-javascript-hammer/</guid>
       <description>When all you have is a hammer, everything can be hammered down. But not every problem needs to be solved with a hammer. That&amp;rsquo;s why it&amp;rsquo;s important to understand how different languages solve problems differently (https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r). To learn a new ways of reasoning about software, learn new programming languages with different styles like functional, and dynamically typed languages such as Javascript.
 JavaScript is an excellent language to learn new ways of thinking, building and deploying software.</description>
     </item>
     
     <item>
       <title>Software Quality</title>
-      <link>http://localhost:46341/thought/software-quality/</link>
+      <link>http://localhost:45933/thought/software-quality/</link>
       <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/thought/software-quality/</guid>
+      <guid>http://localhost:45933/thought/software-quality/</guid>
       <description>Software Quality: There are known software quality attributes such as performance and maintainability but good software quality is really achieved not by adding more features but removing just enough features. Since quality is ultimately measured by the user experience (http://wiki.c2.com/?DoesSoftwareQualityMeanNoBugs), what matter is how easy it is for the user to accomplish a task.</description>
     </item>
     
     <item>
       <title>OAuth with AngularJS and ASP.Net WebAPI</title>
-      <link>http://localhost:46341/talk/oauth-with-angular-asp-net-web-api/</link>
+      <link>http://localhost:45933/talk/oauth-with-angular-asp-net-web-api/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/talk/oauth-with-angular-asp-net-web-api/</guid>
+      <guid>http://localhost:45933/talk/oauth-with-angular-asp-net-web-api/</guid>
       <description>My first presentation at SoCalCodeCamp (https://www.socalcodecamp.com/) in San Diego, CA was a success. Both the slides and code for my talk on using OAuth 2.0 with AngularJS and WebAPI are on github for all to view.
 Slides: https://www.slideshare.net/szahn/angular-oauth-socalcodecamp-2015 Code: https://github.com/szahn/AngularWebApiOAuthDemo</description>
     </item>
     
     <item>
       <title>Tactegic</title>
-      <link>http://localhost:46341/thought/tactegic/</link>
+      <link>http://localhost:45933/thought/tactegic/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/thought/tactegic/</guid>
+      <guid>http://localhost:45933/thought/tactegic/</guid>
       <description>I first heard about the word Tactegic from this blog post (https://genehughson.wordpress.com/2015/01/03/who-needs-architects-when-tactics-do-not-add-up-to-strategy/). Without focus, lots of little tactical successes can breed strategic defeat. When it comes to programming, the word hacking seems related to this idea. When you&amp;rsquo;re hacking away, you&amp;rsquo;re usually taking as many shortcuts as you can, and fumbling your way towards some kind of ad-hoc fix. Hacking can be good with a degree of focus and strategy. In fact, some hacks may lead to actual products in the end.</description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>http://localhost:46341/thought/architecture/</link>
+      <link>http://localhost:45933/thought/architecture/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/thought/architecture/</guid>
+      <guid>http://localhost:45933/thought/architecture/</guid>
       <description>Good architecture is reductionistic and about decomposing bigger pieces into smaller ones, but not too small or too large to exceed the benefit. It&amp;rsquo;s about encapsulating volatile logic and data into proper boundaries.</description>
     </item>
     
     <item>
       <title>Migrating a Legacy Repository from SVN to Git on Windows</title>
-      <link>http://localhost:46341/post/migrating-legacy-repository-from-svn-git/</link>
+      <link>http://localhost:45933/post/migrating-legacy-repository-from-svn-git/</link>
       <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/migrating-legacy-repository-from-svn-git/</guid>
+      <guid>http://localhost:45933/post/migrating-legacy-repository-from-svn-git/</guid>
       <description>There may come a time when you stumble upon an ancient SVN repository nested with multiple projects and need to efficiently collaborate with others on a single project in that repository. Well, we all know Git is better than SVN in many ways. It&amp;rsquo;s faster and the decentralized, distributed nature of Git provides better security and redundancy. We all remember the story of codespaces.com, where a single hacker hacked into their Amazon servers in the cloud and they were forced to shut down.</description>
     </item>
     
     <item>
       <title>Using the Yelp Api</title>
-      <link>http://localhost:46341/post/using-the-yelp-api/</link>
+      <link>http://localhost:45933/post/using-the-yelp-api/</link>
       <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/using-the-yelp-api/</guid>
+      <guid>http://localhost:45933/post/using-the-yelp-api/</guid>
       <description>Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.
 I wanted to produce a final solution all Node JS and Angular JS.</description>
     </item>
     
     <item>
       <title>Analyzing .NET Assembly Architecture</title>
-      <link>http://localhost:46341/post/analyzing-net-assembly-architecture/</link>
+      <link>http://localhost:45933/post/analyzing-net-assembly-architecture/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/analyzing-net-assembly-architecture/</guid>
+      <guid>http://localhost:45933/post/analyzing-net-assembly-architecture/</guid>
       <description>Have you ever installed an IIS website only to get an error that there is an assembly with the incorrect format in the bin folder? How about when you&amp;rsquo;re installing a window service and you&amp;rsquo;re not sure if the application is 32-bit or 64-bit? Sure, there are free tools like the Telerik Decompiler that will let you poke around those .dlls to see what cpu architecture they are built for, but what if you have dozens of dlls in one folder?</description>
     </item>
     
     <item>
       <title>Using DotNetNuke (DNN) CMS</title>
-      <link>http://localhost:46341/post/using-dnn-cms/</link>
+      <link>http://localhost:45933/post/using-dnn-cms/</link>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/using-dnn-cms/</guid>
+      <guid>http://localhost:45933/post/using-dnn-cms/</guid>
       <description>DotNetNuke (https://www.dnnsoftware.com/) is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
 Review UX Design Guidelines (http://uxguide.dotnetnuke.com/CSSFoundation.aspx). Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
     </item>
     
     <item>
+      <title>Monk and Merchant</title>
+      <link>http://localhost:45933/book/monk-and-merchant/</link>
+      <pubDate>Mon, 13 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:45933/book/monk-and-merchant/</guid>
+      <description>Work hard and God will prosper you. Financial Prosperity is often connected to Soul Prosperity A man must do what he can to provide for his family Trials develop your character, preparing you for increased blessings Take responsibility for problems that are the result of your own bad decisions. Don&amp;rsquo;t displace the blame. See challenges as stepping stones, not as obstacles. Be meek before God, but bold before men. (In other words, be assertive but not aggressive).</description>
+    </item>
+    
+    <item>
       <title>Optical Character Recognition</title>
-      <link>http://localhost:46341/post/optical-character-recognition/</link>
+      <link>http://localhost:45933/post/optical-character-recognition/</link>
       <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/optical-character-recognition/</guid>
+      <guid>http://localhost:45933/post/optical-character-recognition/</guid>
       <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
 From five years of experience with OCR engines, the following are the recommendations in order:
  Tesseract (https://github.com/tesseract-ocr/tesseract) Free and open sourced by Google OpenText RecoStar (http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture Recognition Engine) + Design Studio Abbyy (http://www.</description>
@@ -119,10 +128,10 @@ From five years of experience with OCR engines, the following are the recommenda
     
     <item>
       <title>PDF Document Processing</title>
-      <link>http://localhost:46341/post/processing-pdfs/</link>
+      <link>http://localhost:45933/post/processing-pdfs/</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/post/processing-pdfs/</guid>
+      <guid>http://localhost:45933/post/processing-pdfs/</guid>
       <description>If ImageMagick (http://www.imagemagick.org/script/index.php) is the standard open source solution for image processing, then GhostScript (https://www.ghostscript.com/) is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here: http://itextpdf.com/summit.php. These are great to watch if you work with PDFs.
 PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.</description>
@@ -130,38 +139,29 @@ PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old f
     
     <item>
       <title>Creativity</title>
-      <link>http://localhost:46341/thought/creativity/</link>
+      <link>http://localhost:45933/thought/creativity/</link>
       <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/thought/creativity/</guid>
+      <guid>http://localhost:45933/thought/creativity/</guid>
       <description>Creative people are excellent observers. The difference between designers and developers is how they see and interpret the world. (https://webdesign.tutsplus.com/articles/the-concept-of-creativity--webdesign-11727)
  &amp;ldquo;Curiosity about life in all of its aspects, I think, is still the secret of great creative people&amp;rdquo; – Leo Burnett Creativity lies in the power to do unusual (useful) things  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/about/</link>
+      <link>http://localhost:45933/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/about/</guid>
-      <description>Being a full-stack developer has exposed me to a broad range of useful ideas. I enjoy taking ownership of the full software lifecycle, from prototype to deployment. I&amp;rsquo;m visually oriented and know how to implement business requirements on the front-end as a HTML Javascript application and also on the server-side with micro-services. As a polyglot, I know when to use the right tools for the job. The best SaaS API integration may mean using either Go, Node, Java or C# .</description>
+      <guid>http://localhost:45933/about/</guid>
+      <description>About Being a full-stack developer has exposed me to a broad range of useful ideas. I enjoy taking ownership of the full software lifecycle, from prototype to deployment. I&amp;rsquo;m visually oriented and know how to implement business requirements on the front-end as a HTML Javascript application and also on the server-side with micro-services. As a polyglot, I know when to use the right tools for the job. The best SaaS API integration may mean using either Go, Node, Java or C# .</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/books/</link>
+      <link>http://localhost:45933/draft/d3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/books/</guid>
-      <description> Books  Pragmatic Bookshelf Superintelligence: Paths, Dangers, Strategies Homo Deus: A Brief History of Tomorrow 30-Second Maths  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:46341/draft/d3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:46341/draft/d3/</guid>
+      <guid>http://localhost:45933/draft/d3/</guid>
       <description>Enter/Exit pattern
 The point is that trends and patterns are important, but so are outliers, missing data points, and inconsistencies. http://flowingdata.com/2010/03/04/think-like-a-statistician-without-the-math/ Mike Bostock http://bost.ocks.org/mike/ http://bl.ocks.org/mbostock
 Elijah Meeks http://elijahmeeks.com/#project-page Adobe Color Wheel for Pallete generation https://color.adobe.com/create/color-wheel/
@@ -177,58 +177,60 @@ successor = TauCHarts = https://github.com/TargetProcess/tauCharts</description
     
     <item>
       <title></title>
-      <link>http://localhost:46341/draft/high-performance-excel-like-data-grids/</link>
+      <link>http://localhost:45933/draft/high-performance-excel-like-data-grids/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/draft/high-performance-excel-like-data-grids/</guid>
+      <guid>http://localhost:45933/draft/high-performance-excel-like-data-grids/</guid>
       <description>High performance grids in React
  DevExpres vs. Telerik React Virtualized https://github.com/energydrink9/functional-data-grid?utm_campaign=Fullstack%2BReact&amp;amp;utm_medium=email&amp;amp;utm_source=Fullstack_React_115  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/draft/interview-questions-answers/</link>
+      <link>http://localhost:45933/draft/interview-questions-answers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/draft/interview-questions-answers/</guid>
+      <guid>http://localhost:45933/draft/interview-questions-answers/</guid>
       <description>Data structures Performance and Big O Notation What&amp;rsquo;s your biggest weakness? Hard to answer questions (Estimate weight of plane)
 Remember that you are also interviewing the company. Don&amp;rsquo;t let the imposter syndrome get you and feel you aren&amp;rsquo;t qualified. Check that you are a good fit for the company culture by meeting your team as part of the process and do a gut check.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/draft/oauth-authentication-implementation/</link>
+      <link>http://localhost:45933/draft/oauth-authentication-implementation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/draft/oauth-authentication-implementation/</guid>
+      <guid>http://localhost:45933/draft/oauth-authentication-implementation/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/draft/remote-work/</link>
+      <link>http://localhost:45933/draft/remote-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/draft/remote-work/</guid>
+      <guid>http://localhost:45933/draft/remote-work/</guid>
       <description>Problem solving requires close proximity to the problem, although remote work is popular, it increases the distance requires to collaborate on a solution.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/draft/single-page-application-development/</link>
+      <link>http://localhost:45933/draft/single-page-application-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/draft/single-page-application-development/</guid>
+      <guid>http://localhost:45933/draft/single-page-application-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:46341/quotes/</link>
+      <link>http://localhost:45933/quotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:46341/quotes/</guid>
-      <description> Quotes  &amp;ldquo;Full-stack development is about exposing yourself to a broad range of ideas.&amp;rdquo; &amp;ldquo;You don’t really understand something if you only understand it one way&amp;rdquo; -Marvin Minsky &amp;ldquo;If something is hard, keep doing it until it&amp;rsquo;s easy.&amp;rdquo;  </description>
+      <guid>http://localhost:45933/quotes/</guid>
+      <description>Quotes &amp;ldquo;Full-stack development is about exposing yourself to a broad range of ideas.&amp;rdquo;
+&amp;ldquo;You don’t really understand something if you only understand it one way&amp;rdquo; &amp;mdash;Marvin Minsky
+&amp;ldquo;If something is hard, keep doing it until it&amp;rsquo;s easy.&amp;rdquo;</description>
     </item>
     
   </channel>
