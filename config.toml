@@ -18,12 +18,6 @@ SectionPagesMenu = "main"
 
 
 [menu]
-    [[menu.main]]
-    identifier = "articles"
-    name       = "Articles"
-    url        = "/"
-    weight     = 1
-
 
     [[menu.main]]
     identifier = "talk"
