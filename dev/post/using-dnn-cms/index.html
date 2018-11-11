@@ -27,19 +27,17 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               
-                <a class="nav-item nav-link" href="/">Articles</a>
-              
                 <a class="nav-item nav-link" href="/talk">Talks</a>
               
                 <a class="nav-item nav-link" href="/thought">Thoughts</a>
               
                 <a class="nav-item nav-link" href="/about">About</a>
               
+                <a class="nav-item nav-link" href="/linux-commands">Linux Commands</a>
+              
                 <a class="nav-item nav-link" href="/book">Books</a>
               
                 <a class="nav-item nav-link" href="/quotes">Quotes</a>
-              
-                <a class="nav-item nav-link" href="/draft/">Drafts</a>
               
                 <a class="nav-item nav-link" href="/post/">Posts</a>
               
@@ -58,7 +56,6 @@
 <div class="blog-post">
   <h1>Using DotNetNuke (DNN) CMS</h1>
   <div class="blog-post-subheader">
-    <time>17 Apr 2014</time>
   </div>
   <div>
     
@@ -94,29 +91,34 @@
 
 <p>When making changes to DNN on a web farm, it&rsquo;s best to recycle the app pool. The command below will recycle the app pool</p>
 
-<p><code>%systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL MyAppPoolId</code></p>
+<pre><code>%systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL MyAppPoolId
+</code></pre>
 
 <p>Using AppCmd, you can get a list of app pools by executing</p>
 
-<p><code>%systemroot%\system32\inetsrv\AppCmd.exe LIST APPPOOL</code></p>
+<pre><code>%systemroot%\system32\inetsrv\AppCmd.exe LIST APPPOOL
+</code></pre>
 
 <p>Furthermore, this command can be wrapped in a powershell command and executed remotely</p>
 
-<p><code>function RecycleAppPool($serverName, $appPoolId){
+<pre><code>function RecycleAppPool($serverName, $appPoolId){
     Invoke-Command $serverName { param($appPoolId) %systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL $appPoolId } -Args $appPoolId
 }
 $WEBPROD1 = &quot;x.x.x.x&quot;;
 $WEBPROD2 = &quot;x.x.x.x&quot;;
 RecycleAppPool $WEBPROD1 &quot;SiteAppPoolId&quot;
-RecycleAppPool $WEBPROD2 &quot;SiteAppPoolId&quot;</code></p>
+RecycleAppPool $WEBPROD2 &quot;SiteAppPoolId&quot;
+</code></pre>
 
 <p>To enable Powershell, you may need to run this command in CMD as an admin:</p>
 
-<p><code>Set-ExecutionPolicy unrestricted</code></p>
+<pre><code>Set-ExecutionPolicy unrestricted
+</code></pre>
 
 <p>To enable powershell remoting, run the following command on the remote server you wish to control</p>
 
-<p><code>Enable-PSRemoting -force</code></p>
+<pre><code>Enable-PSRemoting -force
+</code></pre>
 
   </div>
 </div>
@@ -129,6 +131,10 @@ RecycleAppPool $WEBPROD2 &quot;SiteAppPoolId&quot;</code></p>
         </small>
       </footer>
     </div> 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=43157&mindelay=10"></' + 'script>')</script></body>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>
 

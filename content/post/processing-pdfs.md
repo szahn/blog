@@ -10,7 +10,9 @@ iText is an open source and commercial PDF library. You can view videos on the i
 
 PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.
 
-`pdf2image -f tiff -d 200 --mono -m 137861.pdf`
+```
+pdf2image -f tiff -d 200 --mono -m 137861.pdf
+```
 
 Leadtools has been a long favorite due to performance and features: http://demo.leadtools.com/HTML5/ThumbnailDemo.htm
 

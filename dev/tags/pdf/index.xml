@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pdf on Blog</title>
-    <link>http://localhost:43157/tags/pdf/</link>
+    <link>http://localhost:1313/tags/pdf/</link>
     <description>Recent content in Pdf on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:43157/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PDF Document Processing</title>
-      <link>http://localhost:43157/post/processing-pdfs/</link>
+      <link>http://localhost:1313/post/processing-pdfs/</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:43157/post/processing-pdfs/</guid>
+      <guid>http://localhost:1313/post/processing-pdfs/</guid>
       <description>If ImageMagick (http://www.imagemagick.org/script/index.php) is the standard open source solution for image processing, then GhostScript (https://www.ghostscript.com/) is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here: http://itextpdf.com/summit.php. These are great to watch if you work with PDFs.
 PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.</description>

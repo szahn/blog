@@ -25,27 +25,36 @@ To clear the DNN cache, one can go to Host > Schedule. For "Purge Cache" and "P
 
 When making changes to DNN on a web farm, it's best to recycle the app pool. The command below will recycle the app pool
 
-`%systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL MyAppPoolId`
+```
+%systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL MyAppPoolId
+```
 
 Using AppCmd, you can get a list of app pools by executing
 
-`%systemroot%\system32\inetsrv\AppCmd.exe LIST APPPOOL`
+```
+%systemroot%\system32\inetsrv\AppCmd.exe LIST APPPOOL
+```
 
 Furthermore, this command can be wrapped in a powershell command and executed remotely
 
-`function RecycleAppPool($serverName, $appPoolId){
+```
+function RecycleAppPool($serverName, $appPoolId){
     Invoke-Command $serverName { param($appPoolId) %systemroot%\system32\inetsrv\AppCmd.exe recycle APPPOOL $appPoolId } -Args $appPoolId
 }
 $WEBPROD1 = "x.x.x.x";
 $WEBPROD2 = "x.x.x.x";
 RecycleAppPool $WEBPROD1 "SiteAppPoolId"
-RecycleAppPool $WEBPROD2 "SiteAppPoolId"`
+RecycleAppPool $WEBPROD2 "SiteAppPoolId"
+```
 
 To enable Powershell, you may need to run this command in CMD as an admin:
 
-`Set-ExecutionPolicy unrestricted`
+```
+Set-ExecutionPolicy unrestricted
+```
 
 To enable powershell remoting, run the following command on the remote server you wish to control
 
-`Enable-PSRemoting -force`
-
+```
+Enable-PSRemoting -force
+```

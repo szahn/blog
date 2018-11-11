@@ -38,6 +38,12 @@ SectionPagesMenu = "main"
     weight     = 4
 
     [[menu.main]]
+    identifier = "linux-commands"
+    name       = "Linux Commands"
+    url        = "/linux-commands"
+    weight     = 4
+
+    [[menu.main]]
     identifier = "book"
     name       = "Books"
     url        = "/book"

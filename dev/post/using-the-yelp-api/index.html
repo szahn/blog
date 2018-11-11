@@ -27,19 +27,17 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               
-                <a class="nav-item nav-link" href="/">Articles</a>
-              
                 <a class="nav-item nav-link" href="/talk">Talks</a>
               
                 <a class="nav-item nav-link" href="/thought">Thoughts</a>
               
                 <a class="nav-item nav-link" href="/about">About</a>
               
+                <a class="nav-item nav-link" href="/linux-commands">Linux Commands</a>
+              
                 <a class="nav-item nav-link" href="/book">Books</a>
               
                 <a class="nav-item nav-link" href="/quotes">Quotes</a>
-              
-                <a class="nav-item nav-link" href="/draft/">Drafts</a>
               
                 <a class="nav-item nav-link" href="/post/">Posts</a>
               
@@ -58,7 +56,6 @@
 <div class="blog-post">
   <h1>Using the Yelp Api</h1>
   <div class="blog-post-subheader">
-    <time>18 Jul 2014</time>
   </div>
   <div>
     
@@ -76,14 +73,13 @@
 
 <p>The NodeJS server returns some JSON with bookmarked locations which were queried directly from a Yelp URL using request (<a href="https://www.npmjs.org/package/request">https://www.npmjs.org/package/request</a>) and then parsed with cherrio (<a href="https://github.com/cheeriojs/cheerio">https://github.com/cheeriojs/cheerio</a>). The reason I couldn&rsquo;t use their API is that they did not include retrieving bookmarks!</p>
 
-<p><code>
-[{title: &quot;Pyramid Alehouse&quot;,
+<pre><code>[{title: &quot;Pyramid Alehouse&quot;,
 streetAddress: &quot;1201 1st Ave S Seattle, WA 98134&quot;
 },{title: &quot;Elysian Fields&quot;,
 streetAddress: &quot;542 1st Ave S Seattle, WA 98104&quot;
 },{title: &quot;The Brooklyn Seafood, Steak &amp; Oyster House&quot;,
 streetAddress: &quot;1212 2nd Ave Seattle, WA 98101&quot;}]
-</code></p>
+</code></pre>
 
 <p>The results were a list of waypoints starting from the user&rsquo;s location.</p>
 
@@ -108,6 +104,10 @@ streetAddress: &quot;1212 2nd Ave Seattle, WA 98101&quot;}]
         </small>
       </footer>
     </div> 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=43157&mindelay=10"></' + 'script>')</script></body>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=38197&mindelay=10"></' + 'script>')</script></body>
 </html>
 

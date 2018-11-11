@@ -81,3 +81,37 @@ pre {
 footer  {
   text-align: center;
 }
+
+
+.navbar-nav a{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-nav a:hover{
+  background: none;
+  color: #000;
+}
+
+a {
+  padding: 4px;  
+}
+
+a:hover{
+  background: #007bff;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+
+code{
+  color: #5b3c51;
+}
+
+pre {
+  
+}
+
+pre code{
+  color: #5b3c51;
+}

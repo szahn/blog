@@ -10,14 +10,14 @@ I wanted to produce a final solution all Node JS and Angular JS. This meant lear
 
 The NodeJS server returns some JSON with bookmarked locations which were queried directly from a Yelp URL using request (https://www.npmjs.org/package/request) and then parsed with cherrio (https://github.com/cheeriojs/cheerio). The reason I couldn't use their API is that they did not include retrieving bookmarks!
 
-`
+```
 [{title: "Pyramid Alehouse",
 streetAddress: "1201 1st Ave S Seattle, WA 98134"
 },{title: "Elysian Fields",
 streetAddress: "542 1st Ave S Seattle, WA 98104"
 },{title: "The Brooklyn Seafood, Steak & Oyster House",
 streetAddress: "1212 2nd Ave Seattle, WA 98101"}]
-`
+```
 
 The results were a list of waypoints starting from the user's location.
 
