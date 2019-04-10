@@ -9,6 +9,7 @@ SectionPagesMenu = "main"
   thought = "thoughts"
   talk = "talks"
   book = "books"
+  howto = "howto"
 
 [params]
     author = "Stuart Zahn"
@@ -26,6 +27,12 @@ SectionPagesMenu = "main"
     weight     = 2
 
     [[menu.main]]
+    identifier = "howto"
+    name       = "How To"
+    url        = "/howto"
+    weight     = 3
+
+    [[menu.main]]
     identifier = "thought"
     name       = "Thoughts"
     url        = "/thought"
@@ -35,12 +42,6 @@ SectionPagesMenu = "main"
     identifier = "about"
     name       = "About"
     url        = "/about"
-    weight     = 4
-
-    [[menu.main]]
-    identifier = "linux-commands"
-    name       = "Linux Commands"
-    url        = "/linux-commands"
     weight     = 4
 
     [[menu.main]]
