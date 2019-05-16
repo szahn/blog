@@ -3,14 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
-
-        <title>Using the Yelp Api</title>
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>Consuming the Yelp Api</title>
         <link rel="stylesheet" href="/css/stylesheet.css">
     </head>
     <body>
@@ -26,27 +21,16 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              
-                <a class="nav-item nav-link" href="/talk">Talks</a>
-              
+              <a class="nav-item nav-link" href="/post">Posts</a>
                 <a class="nav-item nav-link" href="/thought">Thoughts</a>
-              
-                <a class="nav-item nav-link" href="/about">About</a>
-              
-                <a class="nav-item nav-link" href="/linux-commands">Linux Commands</a>
-              
-                <a class="nav-item nav-link" href="/book">Books</a>
-              
                 <a class="nav-item nav-link" href="/quotes">Quotes</a>
-              
-                <a class="nav-item nav-link" href="/post/">Posts</a>
-              
+                <a class="nav-item nav-link" href="/about">About</a>
             </div>
           </div>
         </nav>
 
         <section id="page-title">
-          <h1><a href="/">Blog</a></h1>
+          <h1><a href="/">Consuming the Yelp Api</a></h1>
           <span id="author-name">
             <h6><a href="/about/">Stuart Zahn</a></h6>
           </span>
@@ -54,7 +38,6 @@
 
 
 <div class="blog-post">
-  <h1>Using the Yelp Api</h1>
   <div class="blog-post-subheader">
   </div>
   <div>
@@ -71,16 +54,13 @@
 
 <p>I wanted to produce a final solution all Node JS and Angular JS. This meant learning about Node JS, Angular JS and how to wire the two together. The implementation would utilize Google Maps and Geocoding services. I ran into several limitations with their free service, mostly OVER_QUERY_LIMIT errors which would require me to rewrite my code to handle these errors, wait a few seconds and then retry.</p>
 
-<p>The NodeJS server returns some JSON with bookmarked locations which were queried directly from a Yelp URL using request (<a href="https://www.npmjs.org/package/request">https://www.npmjs.org/package/request</a>) and then parsed with cherrio (<a href="https://github.com/cheeriojs/cheerio">https://github.com/cheeriojs/cheerio</a>). The reason I couldn&rsquo;t use their API is that they did not include retrieving bookmarks!</p>
-
-<pre><code>[{title: &quot;Pyramid Alehouse&quot;,
-streetAddress: &quot;1201 1st Ave S Seattle, WA 98134&quot;
-},{title: &quot;Elysian Fields&quot;,
-streetAddress: &quot;542 1st Ave S Seattle, WA 98104&quot;
-},{title: &quot;The Brooklyn Seafood, Steak &amp; Oyster House&quot;,
-streetAddress: &quot;1212 2nd Ave Seattle, WA 98101&quot;}]
-</code></pre>
-
+<p>The NodeJS server returns some JSON with bookmarked locations which were queried directly from a Yelp URL using <a href="https://www.npmjs.org/package/request">request</a> and then parsed with <a href="https://github.com/cheeriojs/cheerio">cherrio</a>. The reason I couldn&rsquo;t use their API is that they did not include retrieving bookmarks!</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[{<span style="">title:</span> <span style="color:#062873;font-weight:bold">&#34;Pyramid Alehouse&#34;</span>,
+<span style="">streetAddress:</span> <span style="color:#062873;font-weight:bold">&#34;1201 1st Ave S Seattle, WA 98134&#34;</span>
+},{<span style="">title:</span> <span style="color:#062873;font-weight:bold">&#34;Elysian Fields&#34;</span>,
+<span style="">streetAddress:</span> <span style="color:#062873;font-weight:bold">&#34;542 1st Ave S Seattle, WA 98104&#34;</span>
+},{<span style="">title:</span> <span style="color:#062873;font-weight:bold">&#34;The Brooklyn Seafood, Steak &amp; Oyster House&#34;</span>,
+<span style="">streetAddress:</span> <span style="color:#062873;font-weight:bold">&#34;1212 2nd Ave Seattle, WA 98101&#34;</span>}]</code></pre></div>
 <p>The results were a list of waypoints starting from the user&rsquo;s location.</p>
 
 <p><img src="/img/2014-07-18_14-25-48-e1405718882601.png" alt="Image" /></p>
@@ -91,23 +71,23 @@ streetAddress: &quot;1212 2nd Ave Seattle, WA 98101&quot;}]
 
 <p>&ldquo;I am a avid user of Yelp and an active reviewer. I am also a developer and would like to write a mobile app that integrated with Yelp. However, I&rsquo;ve found the Yelp API to be limiting. For example, I cannot query a list of my bookmarks for a particular city. I plan on displaying these bookmarks on a Google map with waypoints indicating the ideal path to take from my starting point. This way, I can create a walking tour of my favorite Yelp bookmarks within walking distance from me. This appears to be an important feature which Yelp currently lacks. Upon discovery, I&rsquo;ve found that I cannot even query my open public bookmarks from my web server as I get a 403: Forbidden error. Is there a legal reason for rejecting my server request? Please add the ability to query bookmarks from the API or provide a way I can get a list of bookmarks from a url such as &ldquo;<a href="http://www.yelp.com/user_details_bookmarks?cc=US&amp;city=Seattle&amp;state=WA&amp;userid=XXX&amp;neighborhood=Downtown&quot;">http://www.yelp.com/user_details_bookmarks?cc=US&amp;city=Seattle&amp;state=WA&amp;userid=XXX&amp;neighborhood=Downtown&quot;</a> from my web server without getting blocked.&rdquo;</p>
 
-<p>If you&rsquo;re curious, you can find the code here: <a href="https://github.com/szahn/YelpItinerary">https://github.com/szahn/YelpItinerary</a>. It&rsquo;s not finished yet and there is still a ton of refactoring to do.</p>
+<p>If you&rsquo;re curious, you can find the <a href="https://github.com/szahn/YelpItinerary">code here</a>. It&rsquo;s not finished yet and there is still a ton of refactoring to do.</p>
 
   </div>
 </div>
 
       <footer>
-        <hr>
         <small>
-          &copy; 2018 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+          &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
           
         </small>
       </footer>
     </div> 
    
+   <div class="floor"></div>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script data-no-instant>document.write('<script src="/livereload.js?port=38197&mindelay=10"></' + 'script>')</script></body>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>
 

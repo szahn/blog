@@ -2,60 +2,127 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thoughts on Blog</title>
-    <link>http://localhost:1313/thought/</link>
+    <link>http://localhost:35825/thought/</link>
     <description>Recent content in Thoughts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Feb 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/thought/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:35825/thought/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>All Purpose Javascript Hammer</title>
-      <link>http://localhost:1313/thought/all-purpose-javascript-hammer/</link>
+      <link>http://localhost:35825/thought/all-purpose-javascript-hammer/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/all-purpose-javascript-hammer/</guid>
+      <guid>http://localhost:35825/thought/all-purpose-javascript-hammer/</guid>
       <description>When all you have is a hammer, everything can be hammered down. But not every problem needs to be solved with a hammer. That&amp;rsquo;s why it&amp;rsquo;s important to understand how different languages solve problems differently (https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r). To learn a new ways of reasoning about software, learn new programming languages with different styles like functional, and dynamically typed languages such as Javascript.
 JavaScript is an excellent language to learn new ways of thinking, building and deploying software.</description>
     </item>
     
     <item>
       <title>Software Quality</title>
-      <link>http://localhost:1313/thought/software-quality/</link>
+      <link>http://localhost:35825/thought/software-quality/</link>
       <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/software-quality/</guid>
-      <description>Software Quality: There are known software quality attributes such as performance and maintainability but good software quality is really achieved not by adding more features but removing just enough features. Since quality is ultimately measured by the user experience (http://wiki.c2.com/?DoesSoftwareQualityMeanNoBugs), what matter is how easy it is for the user to accomplish a task.</description>
+      <guid>http://localhost:35825/thought/software-quality/</guid>
+      <description> Software Quality: There are known software quality attributes such as performance and maintainability but good software quality is really achieved not by adding more features but removing just enough features. Since quality is ultimately measured by the user experience (http://wiki.c2.com/?DoesSoftwareQualityMeanNoBugs), what matter is how easy it is for the user to accomplish a task.
+ </description>
     </item>
     
     <item>
       <title>Tactegic</title>
-      <link>http://localhost:1313/thought/tactegic/</link>
+      <link>http://localhost:35825/thought/tactegic/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/tactegic/</guid>
-      <description>I first heard about the word Tactegic from this blog post (https://genehughson.wordpress.com/2015/01/03/who-needs-architects-when-tactics-do-not-add-up-to-strategy/). Without focus, lots of little tactical successes can breed strategic defeat. When it comes to programming, the word hacking seems related to this idea. When you&amp;rsquo;re hacking away, you&amp;rsquo;re usually taking as many shortcuts as you can, and fumbling your way towards some kind of ad-hoc fix. Hacking can be good with a degree of focus and strategy. In fact, some hacks may lead to actual products in the end.</description>
+      <guid>http://localhost:35825/thought/tactegic/</guid>
+      <description>I first heard about the word Tactegic from this blog post (https://genehughson.wordpress.com/2015/01/03/who-needs-architects-when-tactics-do-not-add-up-to-strategy/). Without focus, lots of little tactical successes can breed strategic defeat. When it comes to programming, the word hacking seems related to this idea. When you&amp;rsquo;re hacking away, you&amp;rsquo;re usually taking as many shortcuts as you can, and fumbling your way towards some kind of ad-hoc fix. Hacking can be good with a degree of focus and strategy.</description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/thought/architecture/</link>
+      <link>http://localhost:35825/thought/architecture/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/architecture/</guid>
-      <description>Good architecture is reductionistic and about decomposing bigger pieces into smaller ones, but not too small or too large to exceed the benefit. It&amp;rsquo;s about encapsulating volatile logic and data into proper boundaries.</description>
+      <guid>http://localhost:35825/thought/architecture/</guid>
+      <description> Good architecture is reductionistic and about decomposing bigger pieces into smaller ones, but not too small or too large to exceed the benefit. It&amp;rsquo;s about encapsulating volatile logic and data into proper boundaries.
+ </description>
+    </item>
+    
+    <item>
+      <title>Abstractions</title>
+      <link>http://localhost:35825/thought/abstractions/</link>
+      <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/abstractions/</guid>
+      <description>Computational thinking means creating and making use of different levels of abstraction, to understand and solve problems more effectively.
+Everything is a layer of abstraction over something else. New technology is built upon older technology. I push a button on my Prius and the car starts. No need even for a key in the ignition. A hundred plus years of internal combustion abstracted away to a simple push button.</description>
+    </item>
+    
+    <item>
+      <title>Acryonyms</title>
+      <link>http://localhost:35825/thought/acronyms/</link>
+      <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/acronyms/</guid>
+      <description>DRY: don’t repeat yourself. Don’t write duplicate code, instead use abstraction to abstract common things in one place.
+YAGNI: You Ain&amp;rsquo;t Gonna Need It is the number one principle violated. Closely followed Premature Optimization , which is a special case of YAGNI.
+SOLID: SOLID means Single responsibility, Open-closed principle, Liskov substitution, Interface segregation and Dependency inversion.
+ Single Responsibility: Every object should have a single responsibility, and that all its services should be narrowly aligned with that responsibility.</description>
+    </item>
+    
+    <item>
+      <title>Unix Philosophy</title>
+      <link>http://localhost:35825/thought/unix-philosophy/</link>
+      <pubDate>Sun, 15 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/unix-philosophy/</guid>
+      <description>Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
+ McIlroy’s slightly longer original 4-point formulation is this:
+ Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features. Expect the output of every program to become the input to another, as yet unknown, program.</description>
     </item>
     
     <item>
       <title>Creativity</title>
-      <link>http://localhost:1313/thought/creativity/</link>
+      <link>http://localhost:35825/thought/creativity/</link>
       <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/thought/creativity/</guid>
-      <description>Creative people are excellent observers. The difference between designers and developers is how they see and interpret the world. (https://webdesign.tutsplus.com/articles/the-concept-of-creativity--webdesign-11727)
- &amp;ldquo;Curiosity about life in all of its aspects, I think, is still the secret of great creative people&amp;rdquo; – Leo Burnett Creativity lies in the power to do unusual (useful) things  </description>
+      <guid>http://localhost:35825/thought/creativity/</guid>
+      <description> Creative people are excellent observers. The difference between designers and developers is how they see and interpret the world. (https://webdesign.tutsplus.com/articles/the-concept-of-creativity--webdesign-11727)
+&amp;ldquo;Curiosity about life in all of its aspects, I think, is still the secret of great creative people&amp;rdquo; – Leo Burnett
+Creativity lies in the power to do unusual (useful) things
+ </description>
+    </item>
+    
+    <item>
+      <title>Object Oriented Programming</title>
+      <link>http://localhost:35825/thought/oop/</link>
+      <pubDate>Tue, 12 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/oop/</guid>
+      <description>In the object oriented world we only see objects. Objects interact with each other. Classes, Objects, Inheritance, Polymorphism, Abstraction are common vocabulary we hear in our day-to-day careers. Software architecture like MVC, 3-Tier, MVP tells us how overall projects are going to be structured. MVC (or model view controller) is also a form of a design pattern.
+Design patterns allows us to reuse the experience or rather, provides reusable solutions to commonly occurring problems.</description>
+    </item>
+    
+    <item>
+      <title>Learning How to Code</title>
+      <link>http://localhost:35825/thought/learning-how-to-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/learning-how-to-code/</guid>
+      <description>&amp;ldquo;Code represents power. The power to create, the power to change, the power to influence. Code also represents money to many. It is a raw representation of both intellect and instinctually property. But woodworking, art, sculpture, drama and music are all ways to create and influence. They just don&amp;rsquo;t have price tags as impressive.&amp;rdquo;
+&amp;ldquo;Learn how to question how things work. Learn that everything new and simple hides something large and complex.</description>
+    </item>
+    
+    <item>
+      <title>Separation of Concerns</title>
+      <link>http://localhost:35825/thought/separation-of-concerns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:35825/thought/separation-of-concerns/</guid>
+      <description>A key tenant of building cross-platform apps is to create an architecture that lends itself to a maximization of code sharing across platforms. Adhering to the following Object Oriented Programming principles helps build a well-architected application:
+Separation of concerns is a concept that, when applied to software development, deals with creating distance between dissimilar aspects of your code. This may seem like a complicated statement, but we all have dealt with it in the past, even if we haven’t known it.</description>
     </item>
     
   </channel>

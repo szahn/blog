@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Blog"
 theme = "basics-mod"
 SectionPagesMenu = "main"
+PygmentsCodeFences = true
+PygmentsStyle = "friendly"
 
 [taxonomies]
   tag = "tags"
@@ -21,18 +23,6 @@ SectionPagesMenu = "main"
 [menu]
 
     [[menu.main]]
-    identifier = "talk"
-    name       = "Talks"
-    url        = "/talk"
-    weight     = 2
-
-    [[menu.main]]
-    identifier = "howto"
-    name       = "How To"
-    url        = "/howto"
-    weight     = 3
-
-    [[menu.main]]
     identifier = "thought"
     name       = "Thoughts"
     url        = "/thought"
@@ -43,12 +33,6 @@ SectionPagesMenu = "main"
     name       = "About"
     url        = "/about"
     weight     = 4
-
-    [[menu.main]]
-    identifier = "book"
-    name       = "Books"
-    url        = "/book"
-    weight     = 5
 
     [[menu.main]]
     identifier = "quote"

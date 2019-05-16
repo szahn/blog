@@ -1,6 +1,6 @@
 ---
 date: 2014-04-22
-tags: [.net]
+tags: [.net, csharp]
 title: Analyzing .NET Assembly Architecture
 ---
 
@@ -8,6 +8,6 @@ Have you ever installed an IIS website only to get an error that there is an ass
 
 This utility will dump a list of all .Net assemblies in a folder and display their CPU architecture.
 
-It can be found on GitHub here: https://github.com/szahn/AssemblyAnalyzer
+It can be found on [GitHub here](https://github.com/szahn/AssemblyAnalyzer).
 
-The utility works by querying the ProcessorArchitecture (http://msdn.microsoft.com/en-us/library/vstudio/system.reflection.processorarchitecture) attribute using reflection.
+The utility works by querying the [ProcessorArchitecture](http://msdn.microsoft.com/en-us/library/vstudio/system.reflection.processorarchitecture) attribute using reflection.

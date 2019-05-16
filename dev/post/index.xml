@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using NGrok to Expose Localhost</title>
+      <link>http://localhost:1313/post/using-ngrok/</link>
+      <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/using-ngrok/</guid>
+      <description>If you are developing on localhost, there may be a time you&amp;rsquo;ll want to expose your local server to the public internet for testing. For example, if you wanted to test a Zapier hook. Ngrok creates a tunnel from your localhost to the public internet to do this.
+To do this, simply run:
+ngrok http [port]</description>
+    </item>
     
     <item>
       <title>Summarize Web Posts with React and Python</title>
@@ -30,7 +41,7 @@
     </item>
     
     <item>
-      <title>Using the Yelp Api</title>
+      <title>Consuming the Yelp Api</title>
       <link>http://localhost:1313/post/using-the-yelp-api/</link>
       <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       
@@ -54,8 +65,8 @@ I wanted to produce a final solution all Node JS and Angular JS.</description>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/using-dnn-cms/</guid>
-      <description>DotNetNuke (https://www.dnnsoftware.com/) is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
-Review UX Design Guidelines (http://uxguide.dotnetnuke.com/CSSFoundation.aspx). Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
+      <description>DotNetNuke is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
+Review UX Design Guidelines. Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
     </item>
     
     <item>
@@ -66,7 +77,7 @@ Review UX Design Guidelines (http://uxguide.dotnetnuke.com/CSSFoundation.aspx).
       <guid>http://localhost:1313/post/optical-character-recognition/</guid>
       <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
 From five years of experience with OCR engines, the following are the recommendations in order:
- Tesseract (https://github.com/tesseract-ocr/tesseract) Free and open sourced by Google OpenText RecoStar (http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture Recognition Engine) + Design Studio Abbyy (http://www.</description>
+ Tesseract Free and open sourced by Google OpenText RecoStar (Capture Recognition Engine) + Design Studio Abbyy - They also provide a screen reader for screen-scraping terminals Nuance Omnipage There are also open source, free OCR engines such as Tesseract, which was released by staff from UNLV oddly enough.</description>
     </item>
     
     <item>
@@ -78,6 +89,16 @@ From five years of experience with OCR engines, the following are the recommenda
       <description>If ImageMagick (http://www.imagemagick.org/script/index.php) is the standard open source solution for image processing, then GhostScript (https://www.ghostscript.com/) is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here: http://itextpdf.com/summit.php. These are great to watch if you work with PDFs.
 PDFTron (http://www.pdftron.com/pdf2image/) works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.</description>
+    </item>
+    
+    <item>
+      <title>How to Resize Images</title>
+      <link>http://localhost:1313/post/resize-batch-images/</link>
+      <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/resize-batch-images/</guid>
+      <description>Using ImageMagick you can
+mogrify -resize x250 -quality 80 -path ../thumbs *.jpg  </description>
     </item>
     
   </channel>

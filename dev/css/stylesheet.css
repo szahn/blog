@@ -1,7 +1,18 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: auto;
-    max-width: 50em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid{
+  margin: auto;
+  max-width: 50em;
+}
+
+.navbar-nav{
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Oswald', sans-serif;
 }
 
 #page-title {
@@ -10,7 +21,7 @@ body {
 
 #page-title h1 a {
     color: black;
-    font-size: 2.7rem;
+    font-size: 2rem;
 }
 
 .post a {
@@ -65,7 +76,7 @@ h6  {
 }
 
 code {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
   white-space: pre;
   overflow-x: auto;
 }
@@ -82,6 +93,10 @@ footer  {
   text-align: center;
 }
 
+.navbar-nav{
+  text-align: center;
+  margin: 0 auto;
+}
 
 .navbar-nav a{
   text-transform: uppercase;
@@ -98,8 +113,6 @@ a {
 }
 
 a:hover{
-  background: #007bff;
-  color: #fff;
   text-decoration: none !important;
 }
 
@@ -114,4 +127,29 @@ pre {
 
 pre code{
   color: #5b3c51;
+}
+
+
+body{
+  background: url('../img/header_pattern.png') repeat-x 0 -30px;
+}
+
+#page-title{
+  padding-bottom: 80px;
+}
+
+
+.floor{
+  background: url('../img/desertfloor.jpg') repeat-x;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  height: 300px;
+  width:100%;
+  z-index: -1;
+}
+
+.blog-post-content img{
+  max-width:100% !important;
+  height:auto !important;
 }

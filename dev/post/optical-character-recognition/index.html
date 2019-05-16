@@ -3,14 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
         <title>Optical Character Recognition</title>
-
         <link rel="stylesheet" href="/css/stylesheet.css">
     </head>
     <body>
@@ -26,27 +21,16 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              
-                <a class="nav-item nav-link" href="/talk">Talks</a>
-              
+              <a class="nav-item nav-link" href="/post">Posts</a>
                 <a class="nav-item nav-link" href="/thought">Thoughts</a>
-              
-                <a class="nav-item nav-link" href="/about">About</a>
-              
-                <a class="nav-item nav-link" href="/linux-commands">Linux Commands</a>
-              
-                <a class="nav-item nav-link" href="/book">Books</a>
-              
                 <a class="nav-item nav-link" href="/quotes">Quotes</a>
-              
-                <a class="nav-item nav-link" href="/post/">Posts</a>
-              
+                <a class="nav-item nav-link" href="/about">About</a>
             </div>
           </div>
         </nav>
 
         <section id="page-title">
-          <h1><a href="/">Blog</a></h1>
+          <h1><a href="/">Optical Character Recognition</a></h1>
           <span id="author-name">
             <h6><a href="/about/">Stuart Zahn</a></h6>
           </span>
@@ -54,7 +38,6 @@
 
 
 <div class="blog-post">
-  <h1>Optical Character Recognition</h1>
   <div class="blog-post-subheader">
   </div>
   <div>
@@ -67,32 +50,34 @@
 
   </div>
   <div class="blog-post-content">
-    <p>What is OCR? It&rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.</p>
+    <p>What is <abbr title="Optical Character Recognition">OCR</abbr>? It&rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.</p>
 
 <p>From five years of experience with OCR engines, the following are the recommendations in order:</p>
 
 <ul>
-<li>Tesseract (<a href="https://github.com/tesseract-ocr/tesseract">https://github.com/tesseract-ocr/tesseract</a>) Free and open sourced by Google</li>
-<li>OpenText RecoStar (<a href="http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture">http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture</a> Recognition Engine) + Design Studio</li>
-<li>Abbyy (<a href="http://www.abbyy.com/) -">http://www.abbyy.com/) -</a> They also provide a screen reader for screen-scraping terminals</li>
-<li>Nuance (<a href="http://www.nuance.com/">http://www.nuance.com/</a>) Omnipage
+<li><a href="https://github.com/tesseract-ocr/tesseract">Tesseract</a> Free and open sourced by Google</li>
+<li><a href="http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm">OpenText RecoStar</a> (Capture Recognition Engine) + Design Studio</li>
+<li><a href="http://www.abbyy.com/">Abbyy</a> - They also provide a screen reader for screen-scraping terminals</li>
+<li><a href="http://www.nuance.com/">Nuance</a> Omnipage
 There are also open source, free OCR engines such as Tesseract, which was released by staff from UNLV  oddly enough.</li>
 </ul>
 
 <p>Surprisingly, there are many modern libraries that do on-the-fly OCRing on mobile phones. Such technology has many benefits for both the consumer and business user.</p>
 
+<p>To see an implementation of the Tesseract OCR engine in <code>Go</code>, see my <a href="https://github.com/szahn/OCREngineSoCalCodeCamp2018">OCR Engine demo</a>.</p>
+
   </div>
 </div>
 
       <footer>
-        <hr>
         <small>
-          &copy; 2018 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+          &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
           
         </small>
       </footer>
     </div> 
    
+   <div class="floor"></div>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

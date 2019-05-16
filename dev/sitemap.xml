@@ -3,218 +3,256 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:38197/thought/all-purpose-javascript-hammer/</loc>
+    <loc>http://localhost:38435/post/using-ngrok/</loc>
+    <lastmod>2016-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/thought/all-purpose-javascript-hammer/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thought/software-quality/</loc>
+    <loc>http://localhost:38435/thought/software-quality/</loc>
     <lastmod>2016-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/summarize-python/</loc>
+    <loc>http://localhost:38435/post/summarize-python/</loc>
     <lastmod>2016-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/talk/oauth-with-angular-asp-net-web-api/</loc>
+    <loc>http://localhost:38435/talk/oauth-with-angular-asp-net-web-api/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thought/tactegic/</loc>
+    <loc>http://localhost:38435/thought/tactegic/</loc>
     <lastmod>2015-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thought/architecture/</loc>
+    <loc>http://localhost:38435/thought/architecture/</loc>
     <lastmod>2015-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/migrating-legacy-repository-from-svn-git/</loc>
+    <loc>http://localhost:38435/post/migrating-legacy-repository-from-svn-git/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/using-the-yelp-api/</loc>
+    <loc>http://localhost:38435/post/using-the-yelp-api/</loc>
     <lastmod>2014-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/analyzing-net-assembly-architecture/</loc>
+    <loc>http://localhost:38435/thought/abstractions/</loc>
+    <lastmod>2014-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/thought/acronyms/</loc>
+    <lastmod>2014-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/thought/unix-philosophy/</loc>
+    <lastmod>2014-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/post/analyzing-net-assembly-architecture/</loc>
     <lastmod>2014-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/using-dnn-cms/</loc>
+    <loc>http://localhost:38435/post/using-dnn-cms/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/book/monk-and-merchant/</loc>
-    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:38197/post/optical-character-recognition/</loc>
+    <loc>http://localhost:38435/post/optical-character-recognition/</loc>
     <lastmod>2013-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/processing-pdfs/</loc>
+    <loc>http://localhost:38435/post/processing-pdfs/</loc>
     <lastmod>2013-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thought/creativity/</loc>
+    <loc>http://localhost:38435/thought/creativity/</loc>
     <lastmod>2013-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/about/</loc>
+    <loc>http://localhost:38435/thought/oop/</loc>
+    <lastmod>2012-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/linux-commands/</loc>
+    <loc>http://localhost:38435/post/resize-batch-images/</loc>
+    <lastmod>2010-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:38197/quotes/</loc>
+    <loc>http://localhost:38435/about/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/.net/</loc>
+    <loc>http://localhost:38435/linux-commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/quotes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/tags/.net/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/angular/</loc>
+    <loc>http://localhost:38435/tags/angular/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/api/</loc>
+    <loc>http://localhost:38435/tags/api/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/authentication/</loc>
+    <loc>http://localhost:38435/tags/authentication/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/</loc>
-    <lastmod>2016-02-03T00:00:00+00:00</lastmod>
+    <loc>http://localhost:38435/</loc>
+    <lastmod>2016-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/book/</loc>
-    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
+    <loc>http://localhost:38435/books/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/books/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:38197/tags/cms/</loc>
+    <loc>http://localhost:38435/tags/cms/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/dnn/</loc>
+    <loc>http://localhost:38435/tags/csharp/</loc>
+    <lastmod>2014-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/tags/dnn/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/git/</loc>
+    <loc>http://localhost:38435/tags/git/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/oauth/</loc>
+    <loc>http://localhost:38435/howto/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/thought/learning-how-to-code/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/tags/oauth/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/ocr/</loc>
+    <loc>http://localhost:38435/tags/ocr/</loc>
     <lastmod>2013-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/pdf/</loc>
+    <loc>http://localhost:38435/tags/pdf/</loc>
     <lastmod>2013-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/post/</loc>
+    <loc>http://localhost:38435/post/</loc>
+    <lastmod>2016-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/tags/powershell/</loc>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:38435/tags/python/</loc>
     <lastmod>2016-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/python/</loc>
-    <lastmod>2016-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>http://localhost:38435/thought/separation-of-concerns/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/self-help/</loc>
-    <lastmod>2014-01-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:38197/tags/svn/</loc>
+    <loc>http://localhost:38435/tags/svn/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/</loc>
+    <loc>http://localhost:38435/tags/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/talk/</loc>
+    <loc>http://localhost:38435/talk/</loc>
     <lastmod>2015-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/talks/</loc>
+    <loc>http://localhost:38435/talks/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thought/</loc>
+    <loc>http://localhost:38435/thought/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/thoughts/</loc>
+    <loc>http://localhost:38435/thoughts/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:38197/tags/windows/</loc>
+    <loc>http://localhost:38435/tags/windows/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
