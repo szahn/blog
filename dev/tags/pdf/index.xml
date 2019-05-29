@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pdf on Blog</title>
-    <link>http://localhost:39973/tags/pdf/</link>
+    <link>http://localhost:42825/tags/pdf/</link>
     <description>Recent content in Pdf on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:39973/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:42825/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PDF Document Processing</title>
-      <link>http://localhost:39973/post/processing-pdfs/</link>
+      <link>http://localhost:42825/post/processing-pdfs/</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39973/post/processing-pdfs/</guid>
+      <guid>http://localhost:42825/post/processing-pdfs/</guid>
       <description>If ImageMagick is the standard open source solution for image processing, then GhostScript is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here. These are great to watch if you work with PDFs.
 PDFTron works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.
@@ -25,10 +25,10 @@ pdf2image -f tiff -d 200 --mono -m 137861.</description>
     
     <item>
       <title>How to Resize Images</title>
-      <link>http://localhost:39973/post/resize-batch-images/</link>
+      <link>http://localhost:42825/post/resize-batch-images/</link>
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39973/post/resize-batch-images/</guid>
+      <guid>http://localhost:42825/post/resize-batch-images/</guid>
       <description>Despite SaaS solutions like Cloudinary that can manipulate images for you in the cloud. You may still want to take advantage of free and open source libraries on your own servers. Using ImageMagick you can easily batch scale images.
 mogrify -resize x250 -quality 80 -path ../thumbs *.</description>
     </item>

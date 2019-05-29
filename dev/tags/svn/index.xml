@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Svn on Blog</title>
-    <link>http://localhost:39973/tags/svn/</link>
+    <link>http://localhost:42825/tags/svn/</link>
     <description>Recent content in Svn on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:39973/tags/svn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:42825/tags/svn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Migrating a Legacy Repository from SVN to Git on Windows</title>
-      <link>http://localhost:39973/post/migrating-legacy-repository-from-svn-git/</link>
+      <link>http://localhost:42825/post/migrating-legacy-repository-from-svn-git/</link>
       <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:39973/post/migrating-legacy-repository-from-svn-git/</guid>
+      <guid>http://localhost:42825/post/migrating-legacy-repository-from-svn-git/</guid>
       <description>There may come a time when you stumble upon an ancient SVN repository nested with multiple projects and need to efficiently collaborate with others on a single project in that repository. Well, we all know Git is better than SVN in many ways. It&amp;rsquo;s faster and the decentralized, distributed nature of Git provides better security and redundancy. We all remember the story of codespaces.com, where a single hacker hacked into their Amazon servers in the cloud and they were forced to shut down.</description>
     </item>
     

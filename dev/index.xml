@@ -2,21 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
-    <link>http://localhost:37567/</link>
+    <link>http://localhost:45207/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:37567/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:45207/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>How to Use Twilio for SMS</title>
+      <link>http://localhost:45207/post/how-to-use-twilio/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:45207/post/how-to-use-twilio/</guid>
+      <description>With CRM software being high in demand, there is always a need to keep in touch with the end user. Using Twilio, you can easily register new virtual phone numbers to send and recieve text messages and voice calls.
+Phone Number Registration First, obtain an account sid and auth token from the console. Imagine giving each user their own phone number. Phone number registration is simple and only costs $1 a month.</description>
+    </item>
+    
+    <item>
+      <title>Make for Windows Developers</title>
+      <link>http://localhost:45207/post/gnu-make-basics/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:45207/post/gnu-make-basics/</guid>
+      <description>How do modern developers chain complex commands together to build software products? Javascript developers may tend to use NPM scripts, Windows developers may use a more object oriented approach with Powershell. However, Make is the tried and true approach for most build pipelines. With the advent of WSL, what used to be reserved for Linux developers, can now be used universally as a basic build command tool on all major operating systems.</description>
+    </item>
+    
+    <item>
       <title>Using NGrok to Expose Localhost</title>
-      <link>http://localhost:37567/post/using-ngrok/</link>
+      <link>http://localhost:45207/post/using-ngrok/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/using-ngrok/</guid>
+      <guid>http://localhost:45207/post/using-ngrok/</guid>
       <description>If you are developing on localhost, there may be a time you&amp;rsquo;ll want to expose your local server to the public internet for testing. For example, if you wanted to test a Zapier hook. Ngrok creates a tunnel from your localhost to the public internet to do this.
 To do this, simply run:
 ngrok http [port]</description>
@@ -24,97 +43,97 @@ ngrok http [port]</description>
     
     <item>
       <title>All Purpose Javascript Hammer</title>
-      <link>http://localhost:37567/thought/all-purpose-javascript-hammer/</link>
+      <link>http://localhost:45207/thought/all-purpose-javascript-hammer/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/all-purpose-javascript-hammer/</guid>
+      <guid>http://localhost:45207/thought/all-purpose-javascript-hammer/</guid>
       <description>When all you have is a hammer, everything can be hammered down. But not every problem needs to be solved with a hammer. That&amp;rsquo;s why it&amp;rsquo;s important to understand how different languages solve problems differently (https://www.datacamp.com/community/tutorials/15-easy-solutions-data-frame-problems-r). To learn a new ways of reasoning about software, learn new programming languages with different styles like functional, and dynamically typed languages such as Javascript.
 JavaScript is an excellent language to learn new ways of thinking, building and deploying software.</description>
     </item>
     
     <item>
       <title>Software Quality</title>
-      <link>http://localhost:37567/thought/software-quality/</link>
+      <link>http://localhost:45207/thought/software-quality/</link>
       <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/software-quality/</guid>
+      <guid>http://localhost:45207/thought/software-quality/</guid>
       <description> Software Quality: There are known software quality attributes such as performance and maintainability but good software quality is really achieved not by adding more features but removing just enough features. Since quality is ultimately measured by the user experience (http://wiki.c2.com/?DoesSoftwareQualityMeanNoBugs), what matter is how easy it is for the user to accomplish a task.
  </description>
     </item>
     
     <item>
       <title>Summarize Web Posts with React and Python</title>
-      <link>http://localhost:37567/post/summarize-python/</link>
+      <link>http://localhost:45207/post/summarize-python/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/summarize-python/</guid>
+      <guid>http://localhost:45207/post/summarize-python/</guid>
       <description>Before the end of the year, I vowed to read all 100+ articles that were in my backlog. I had a lot of catching up to do, but if I spent only 15 minutes reading each article, it would still take all day. What if I run my archive through a summarizer so I could quickly see which articles were more important to read than others? This type of technology is not new and hard to find to free online.</description>
     </item>
     
     <item>
       <title>OAuth with AngularJS and ASP.Net WebAPI</title>
-      <link>http://localhost:37567/talk/oauth-with-angular-asp-net-web-api/</link>
+      <link>http://localhost:45207/talk/oauth-with-angular-asp-net-web-api/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/talk/oauth-with-angular-asp-net-web-api/</guid>
+      <guid>http://localhost:45207/talk/oauth-with-angular-asp-net-web-api/</guid>
       <description>My first presentation at SoCalCodeCamp (https://www.socalcodecamp.com/) in San Diego, CA was a success. Both the slides and code for my talk on using OAuth 2.0 with AngularJS and WebAPI are on github for all to view.
 Slides: https://www.slideshare.net/szahn/angular-oauth-socalcodecamp-2015 Code: https://github.com/szahn/AngularWebApiOAuthDemo</description>
     </item>
     
     <item>
       <title>Tactegic</title>
-      <link>http://localhost:37567/thought/tactegic/</link>
+      <link>http://localhost:45207/thought/tactegic/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/tactegic/</guid>
+      <guid>http://localhost:45207/thought/tactegic/</guid>
       <description>I first heard about the word Tactegic from this blog post (https://genehughson.wordpress.com/2015/01/03/who-needs-architects-when-tactics-do-not-add-up-to-strategy/). Without focus, lots of little tactical successes can breed strategic defeat. When it comes to programming, the word hacking seems related to this idea. When you&amp;rsquo;re hacking away, you&amp;rsquo;re usually taking as many shortcuts as you can, and fumbling your way towards some kind of ad-hoc fix. Hacking can be good with a degree of focus and strategy.</description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>http://localhost:37567/thought/architecture/</link>
+      <link>http://localhost:45207/thought/architecture/</link>
       <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/architecture/</guid>
+      <guid>http://localhost:45207/thought/architecture/</guid>
       <description> Good architecture is reductionistic and about decomposing bigger pieces into smaller ones, but not too small or too large to exceed the benefit. It&amp;rsquo;s about encapsulating volatile logic and data into proper boundaries.
  </description>
     </item>
     
     <item>
       <title>Migrating a Legacy Repository from SVN to Git on Windows</title>
-      <link>http://localhost:37567/post/migrating-legacy-repository-from-svn-git/</link>
+      <link>http://localhost:45207/post/migrating-legacy-repository-from-svn-git/</link>
       <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/migrating-legacy-repository-from-svn-git/</guid>
+      <guid>http://localhost:45207/post/migrating-legacy-repository-from-svn-git/</guid>
       <description>There may come a time when you stumble upon an ancient SVN repository nested with multiple projects and need to efficiently collaborate with others on a single project in that repository. Well, we all know Git is better than SVN in many ways. It&amp;rsquo;s faster and the decentralized, distributed nature of Git provides better security and redundancy. We all remember the story of codespaces.com, where a single hacker hacked into their Amazon servers in the cloud and they were forced to shut down.</description>
     </item>
     
     <item>
       <title>Consuming the Yelp Api</title>
-      <link>http://localhost:37567/post/using-the-yelp-api/</link>
+      <link>http://localhost:45207/post/using-the-yelp-api/</link>
       <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/using-the-yelp-api/</guid>
+      <guid>http://localhost:45207/post/using-the-yelp-api/</guid>
       <description>Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.
 I wanted to produce a final solution all Node JS and Angular JS.</description>
     </item>
     
     <item>
       <title>Abstractions</title>
-      <link>http://localhost:37567/thought/abstractions/</link>
+      <link>http://localhost:45207/thought/abstractions/</link>
       <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/abstractions/</guid>
+      <guid>http://localhost:45207/thought/abstractions/</guid>
       <description>Computational thinking means creating and making use of different levels of abstraction, to understand and solve problems more effectively.
 Everything is a layer of abstraction over something else. New technology is built upon older technology. I push a button on my Prius and the car starts. No need even for a key in the ignition. A hundred plus years of internal combustion abstracted away to a simple push button.</description>
     </item>
     
     <item>
       <title>Acryonyms</title>
-      <link>http://localhost:37567/thought/acronyms/</link>
+      <link>http://localhost:45207/thought/acronyms/</link>
       <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/acronyms/</guid>
+      <guid>http://localhost:45207/thought/acronyms/</guid>
       <description>DRY: don’t repeat yourself. Don’t write duplicate code, instead use abstraction to abstract common things in one place.
 YAGNI: You Ain&amp;rsquo;t Gonna Need It is the number one principle violated. Closely followed Premature Optimization , which is a special case of YAGNI.
 SOLID: SOLID means Single responsibility, Open-closed principle, Liskov substitution, Interface segregation and Dependency inversion.
@@ -123,10 +142,10 @@ SOLID: SOLID means Single responsibility, Open-closed principle, Liskov substitu
     
     <item>
       <title>Unix Philosophy</title>
-      <link>http://localhost:37567/thought/unix-philosophy/</link>
+      <link>http://localhost:45207/thought/unix-philosophy/</link>
       <pubDate>Sun, 15 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/unix-philosophy/</guid>
+      <guid>http://localhost:45207/thought/unix-philosophy/</guid>
       <description>Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.
  McIlroy’s slightly longer original 4-point formulation is this:
  Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features. Expect the output of every program to become the input to another, as yet unknown, program.</description>
@@ -134,29 +153,29 @@ SOLID: SOLID means Single responsibility, Open-closed principle, Liskov substitu
     
     <item>
       <title>Analyzing .NET Assembly Architecture</title>
-      <link>http://localhost:37567/post/analyzing-net-assembly-architecture/</link>
+      <link>http://localhost:45207/post/analyzing-net-assembly-architecture/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/analyzing-net-assembly-architecture/</guid>
+      <guid>http://localhost:45207/post/analyzing-net-assembly-architecture/</guid>
       <description>Have you ever installed an IIS website only to get an error that there is an assembly with the incorrect format in the bin folder? How about when you&amp;rsquo;re installing a window service and you&amp;rsquo;re not sure if the application is 32-bit or 64-bit? Sure, there are free tools like the Telerik Decompiler that will let you poke around those .dlls to see what cpu architecture they are built for, but what if you have dozens of dlls in one folder?</description>
     </item>
     
     <item>
       <title>Using DotNetNuke (DNN) CMS</title>
-      <link>http://localhost:37567/post/using-dnn-cms/</link>
+      <link>http://localhost:45207/post/using-dnn-cms/</link>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/using-dnn-cms/</guid>
+      <guid>http://localhost:45207/post/using-dnn-cms/</guid>
       <description>DotNetNuke is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
 Review UX Design Guidelines. Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
     </item>
     
     <item>
       <title>Optical Character Recognition</title>
-      <link>http://localhost:37567/post/optical-character-recognition/</link>
+      <link>http://localhost:45207/post/optical-character-recognition/</link>
       <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/optical-character-recognition/</guid>
+      <guid>http://localhost:45207/post/optical-character-recognition/</guid>
       <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
 From five years of experience with OCR engines, the following are the recommendations in order:
  Tesseract Free and open sourced by Google OpenText RecoStar (Capture Recognition Engine) + Design Studio Abbyy - They also provide a screen reader for screen-scraping terminals Nuance Omnipage There are also open source, free OCR engines such as Tesseract, which was released by staff from UNLV oddly enough.</description>
@@ -164,10 +183,10 @@ From five years of experience with OCR engines, the following are the recommenda
     
     <item>
       <title>PDF Document Processing</title>
-      <link>http://localhost:37567/post/processing-pdfs/</link>
+      <link>http://localhost:45207/post/processing-pdfs/</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/processing-pdfs/</guid>
+      <guid>http://localhost:45207/post/processing-pdfs/</guid>
       <description>If ImageMagick is the standard open source solution for image processing, then GhostScript is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here. These are great to watch if you work with PDFs.
 PDFTron works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.
@@ -176,10 +195,10 @@ pdf2image -f tiff -d 200 --mono -m 137861.</description>
     
     <item>
       <title>Creativity</title>
-      <link>http://localhost:37567/thought/creativity/</link>
+      <link>http://localhost:45207/thought/creativity/</link>
       <pubDate>Mon, 15 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/creativity/</guid>
+      <guid>http://localhost:45207/thought/creativity/</guid>
       <description> Creative people are excellent observers. The difference between designers and developers is how they see and interpret the world. (https://webdesign.tutsplus.com/articles/the-concept-of-creativity--webdesign-11727)
 &amp;ldquo;Curiosity about life in all of its aspects, I think, is still the secret of great creative people&amp;rdquo; – Leo Burnett
 Creativity lies in the power to do unusual (useful) things
@@ -188,48 +207,48 @@ Creativity lies in the power to do unusual (useful) things
     
     <item>
       <title>Object Oriented Programming</title>
-      <link>http://localhost:37567/thought/oop/</link>
+      <link>http://localhost:45207/thought/oop/</link>
       <pubDate>Tue, 12 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/oop/</guid>
+      <guid>http://localhost:45207/thought/oop/</guid>
       <description>In the object oriented world we only see objects. Objects interact with each other. Classes, Objects, Inheritance, Polymorphism, Abstraction are common vocabulary we hear in our day-to-day careers. Software architecture like MVC, 3-Tier, MVP tells us how overall projects are going to be structured. MVC (or model view controller) is also a form of a design pattern.
 Design patterns allows us to reuse the experience or rather, provides reusable solutions to commonly occurring problems.</description>
     </item>
     
     <item>
       <title>How to Resize Images</title>
-      <link>http://localhost:37567/post/resize-batch-images/</link>
+      <link>http://localhost:45207/post/resize-batch-images/</link>
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/post/resize-batch-images/</guid>
+      <guid>http://localhost:45207/post/resize-batch-images/</guid>
       <description>Despite SaaS solutions like Cloudinary that can manipulate images for you in the cloud. You may still want to take advantage of free and open source libraries on your own servers. Using ImageMagick you can easily batch scale images.
 mogrify -resize x250 -quality 80 -path ../thumbs *.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:37567/about/</link>
+      <link>http://localhost:45207/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/about/</guid>
+      <guid>http://localhost:45207/about/</guid>
       <description>About Being a solid full-stack developer has exposed me to a broad range of useful ideas. I enjoy taking ownership of the full software lifecycle, from prototype to deployment. I&amp;rsquo;m visually oriented and know how to implement business requirements on the front-end as a HTML Javascript application and also on the server-side with micro-services. As a polyglot, I know when to use the right tools for the job. The best SaaS API integration may mean using either Go, Node, Java or C# .</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:37567/linux-commands/</link>
+      <link>http://localhost:45207/linux-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/linux-commands/</guid>
+      <guid>http://localhost:45207/linux-commands/</guid>
       <description> Linux Commands    Task Command     Get size of folder du -h -c .   Unzip multiple files for f in *.zip; do unzip $f -d ${f::-4}; done   List processess running port lsof -i :port   Kill a process kill -9 :pid    </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:37567/quotes/</link>
+      <link>http://localhost:45207/quotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/quotes/</guid>
+      <guid>http://localhost:45207/quotes/</guid>
       <description>Quotes &amp;ldquo;Full-stack development is about exposing yourself to a broad range of ideas.&amp;rdquo;
 &amp;ldquo;You don’t really understand something if you only understand it one way&amp;rdquo; &amp;mdash;Marvin Minsky
 &amp;ldquo;If something is hard, keep doing it until it&amp;rsquo;s easy.&amp;rdquo;
@@ -238,20 +257,20 @@ mogrify -resize x250 -quality 80 -path ../thumbs *.</description>
     
     <item>
       <title>Learning How to Code</title>
-      <link>http://localhost:37567/thought/learning-how-to-code/</link>
+      <link>http://localhost:45207/thought/learning-how-to-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/learning-how-to-code/</guid>
+      <guid>http://localhost:45207/thought/learning-how-to-code/</guid>
       <description>&amp;ldquo;Code represents power. The power to create, the power to change, the power to influence. Code also represents money to many. It is a raw representation of both intellect and instinctually property. But woodworking, art, sculpture, drama and music are all ways to create and influence. They just don&amp;rsquo;t have price tags as impressive.&amp;rdquo;
 &amp;ldquo;Learn how to question how things work. Learn that everything new and simple hides something large and complex.</description>
     </item>
     
     <item>
       <title>Separation of Concerns</title>
-      <link>http://localhost:37567/thought/separation-of-concerns/</link>
+      <link>http://localhost:45207/thought/separation-of-concerns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:37567/thought/separation-of-concerns/</guid>
+      <guid>http://localhost:45207/thought/separation-of-concerns/</guid>
       <description>A key tenant of building cross-platform apps is to create an architecture that lends itself to a maximization of code sharing across platforms. Adhering to the following Object Oriented Programming principles helps build a well-architected application:
 Separation of concerns is a concept that, when applied to software development, deals with creating distance between dissimilar aspects of your code. This may seem like a complicated statement, but we all have dealt with it in the past, even if we haven’t known it.</description>
     </item>
