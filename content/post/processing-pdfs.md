@@ -2,6 +2,7 @@
 date: 2013-05-18
 tags: [pdf]
 title: PDF Document Processing
+ThumbUrl: img/code_icon.png
 ---
 
 If [ImageMagick](http://www.imagemagick.org/script/index.php) is the standard open source solution for image processing, then [GhostScript](https://www.ghostscript.com/) is the equivalent for PDF processing.

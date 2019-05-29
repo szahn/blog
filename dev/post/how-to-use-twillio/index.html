@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>How to Use Twillio for SMS</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">How to Use Twillio for SMS</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/api">
+            <span class="badge badge-light">api</span>
+        </a>
+        
+        <a href="/tags/crm">
+            <span class="badge badge-light">crm</span>
+        </a>
+        
+        <a href="/tags/javascript">
+            <span class="badge badge-light">javascript</span>
+        </a>
+        
+        <a href="/tags/node">
+            <span class="badge badge-light">node</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>With <abbr title="customer relation management">CRM</abbr> software being high in demand, there is always a need to keep in touch with the end user. Using <a href="https://www.twilio.com/">Twillio</a>, you can easily register new virtual phone numbers to send and recieve text messages and voice calls.</p>
+
+<h1 id="phone-number-registration">Phone Number Registration</h1>
+
+<p>First, obtain an account sid and auth token from the <a href="https://www.twilio.com/console">console</a>. Imagine giving each user their own phone number. Phone number registration is simple and only costs $1 a month. To register a phone number, search for an available one by area code.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">const</span> client <span style="color:#666">=</span> require(<span style="color:#b44">&#39;twilio&#39;</span>);
+
+<span style="color:#a2f;font-weight:bold">async</span> <span style="color:#a2f;font-weight:bold">function</span> purchasePhoneNumber({areaCode}) {
+
+    console.log(<span style="color:#b44">`Purchasing (</span><span style="color:#b68;font-weight:bold">${</span>areaCode<span style="color:#b68;font-weight:bold">}</span><span style="color:#b44">) phone number...`</span>)
+
+    <span style="color:#a2f;font-weight:bold">const</span> phoneNumbers <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">await</span> client.availablePhoneNumbers(<span style="color:#b44">&#39;US&#39;</span>)
+        .local
+        .list({areaCode<span style="color:#666">:</span> areaCode});
+
+    <span style="color:#a2f;font-weight:bold">if</span> (<span style="color:#666">!</span>phoneNumbers.length){
+        <span style="color:#a2f;font-weight:bold">throw</span> <span style="color:#a2f;font-weight:bold">new</span> <span style="color:#a2f">Error</span>(<span style="color:#b44">`No phone numbers available for area code </span><span style="color:#b68;font-weight:bold">${</span>areaCode<span style="color:#b68;font-weight:bold">}</span><span style="color:#b44">. Try another area code.`</span>);
+    }
+
+    <span style="color:#a2f;font-weight:bold">const</span> {phoneNumber} <span style="color:#666">=</span> phoneNumbers[<span style="color:#666">0</span>];
+
+    <span style="color:#a2f;font-weight:bold">const</span> {dateCreated, friendlyName, phoneNumber <span style="color:#666">:</span> purchasedNumber, sid} <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">await</span> client.incomingPhoneNumbers.create({phoneNumber<span style="color:#666">:</span> phoneNumber})
+
+    <span style="color:#a2f;font-weight:bold">return</span> {
+        created<span style="color:#666">:</span> dateCreated,
+        name<span style="color:#666">:</span> friendlyName,
+        purchasedNumber<span style="color:#666">:</span> purchasedNumber,
+        sid<span style="color:#666">:</span> sid
+    };
+
+}
+</code></pre></div>
+<h1 id="text-messaging">Text Messaging</h1>
+
+<p>Once a phone number is obtained, it can be registered with an existing VoIP system with <a href="https://www.twilio.com/docs/voice/api/sip-registration">SIP registration</a>. To send a text message:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a2f;font-weight:bold">async</span> <span style="color:#a2f;font-weight:bold">function</span> sendMessage({to, from, message}){
+    console.log(<span style="color:#b44">`Sending message &#39;</span><span style="color:#b68;font-weight:bold">${</span>message<span style="color:#b68;font-weight:bold">}</span><span style="color:#b44">&#39; from </span><span style="color:#b68;font-weight:bold">${</span>from<span style="color:#b68;font-weight:bold">}</span><span style="color:#b44"> to </span><span style="color:#b68;font-weight:bold">${</span>to<span style="color:#b68;font-weight:bold">}</span><span style="color:#b44">.`</span>)
+    <span style="color:#a2f;font-weight:bold">const</span> {errorCode, errorMessage, status} <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">await</span> client.messages.create({
+        body<span style="color:#666">:</span> message,
+        to<span style="color:#666">:</span> to,
+        from<span style="color:#666">:</span> from
+    });
+
+    <span style="color:#a2f;font-weight:bold">return</span> {
+        errorCode, 
+        errorMessage, 
+        status
+    };
+}
+</code></pre></div>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=42379&mindelay=10"></' + 'script>')</script></body>
+</html>
+

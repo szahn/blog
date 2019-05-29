@@ -2,9 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid{
+.container-fluid {
   margin: auto;
-  max-width: 50em;
 }
 
 .navbar-nav{
@@ -91,6 +90,7 @@ pre {
 
 footer  {
   text-align: center;
+  padding: 20px;  
 }
 
 .navbar-nav{
@@ -121,35 +121,48 @@ code{
   color: #5b3c51;
 }
 
-pre {
-  
-}
-
 pre code{
   color: #5b3c51;
 }
 
-
-body{
-  background: url('../img/header_pattern.png') repeat-x 0 -30px;
-}
-
 #page-title{
-  padding-bottom: 80px;
-}
-
-
-.floor{
-  background: url('../img/desertfloor.jpg') repeat-x;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  height: 300px;
-  width:100%;
-  z-index: -1;
+  padding-bottom: 20px;
 }
 
 .blog-post-content img{
   max-width:100% !important;
   height:auto !important;
+}
+
+.post a {
+  vertical-align: middle;
+}
+
+.post time {
+  color:#777;
+}
+
+.post .title {
+  font-size:1.2rem;
+}
+
+.post-thumb-col{
+  max-width: 80px;
+}
+
+.post-thumb-col img {
+  width:64px;
+  height:64px;
+}
+
+
+body {
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+}
+
+.tag-list {
+  padding-bottom: 20px;
 }

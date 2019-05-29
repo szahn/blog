@@ -1,4 +1,7 @@
-publish:
+clean:
+	rm -rf public
+
+publish: clean
 	hugo -s ./
 
 serve:

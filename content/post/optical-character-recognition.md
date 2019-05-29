@@ -2,6 +2,7 @@
 date: 2013-07-13
 tags: [ocr]
 title: Optical Character Recognition
+ThumbUrl: img/code_icon.png
 ---
 
 What is <abbr title="Optical Character Recognition">OCR</abbr>? It's short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.

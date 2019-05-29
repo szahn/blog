@@ -2,6 +2,7 @@
 date: 2014-07-18
 tags: [api]
 title: Consuming the Yelp Api
+ThumbUrl: img/code_icon.png
 ---
 
 Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.

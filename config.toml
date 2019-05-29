@@ -4,7 +4,7 @@ title = "Blog"
 theme = "basics-mod"
 SectionPagesMenu = "main"
 PygmentsCodeFences = true
-PygmentsStyle = "friendly"
+PygmentsStyle = "emacs"
 
 [taxonomies]
   tag = "tags"

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ocr on Blog</title>
-    <link>http://localhost:35825/tags/ocr/</link>
+    <link>http://localhost:39973/tags/ocr/</link>
     <description>Recent content in Ocr on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Jul 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:35825/tags/ocr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:39973/tags/ocr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Optical Character Recognition</title>
-      <link>http://localhost:35825/post/optical-character-recognition/</link>
+      <link>http://localhost:39973/post/optical-character-recognition/</link>
       <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35825/post/optical-character-recognition/</guid>
+      <guid>http://localhost:39973/post/optical-character-recognition/</guid>
       <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
 From five years of experience with OCR engines, the following are the recommendations in order:
- Tesseract (https://github.com/tesseract-ocr/tesseract) Free and open sourced by Google OpenText RecoStar (http://www.opentext.com/2/global/products/products-opentext-products-for-oems-and-vars/products-opentext-capture-recognition-engine.htm) (Capture Recognition Engine) + Design Studio Abbyy (http://www.</description>
+ Tesseract Free and open sourced by Google OpenText RecoStar (Capture Recognition Engine) + Design Studio Abbyy - They also provide a screen reader for screen-scraping terminals Nuance Omnipage There are also open source, free OCR engines such as Tesseract, which was released by staff from UNLV oddly enough.</description>
     </item>
     
   </channel>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authentication on Blog</title>
-    <link>http://localhost:35825/tags/authentication/</link>
+    <link>http://localhost:39973/tags/authentication/</link>
     <description>Recent content in Authentication on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:35825/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:39973/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OAuth with AngularJS and ASP.Net WebAPI</title>
-      <link>http://localhost:35825/talk/oauth-with-angular-asp-net-web-api/</link>
+      <link>http://localhost:39973/talk/oauth-with-angular-asp-net-web-api/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35825/talk/oauth-with-angular-asp-net-web-api/</guid>
+      <guid>http://localhost:39973/talk/oauth-with-angular-asp-net-web-api/</guid>
       <description>My first presentation at SoCalCodeCamp (https://www.socalcodecamp.com/) in San Diego, CA was a success. Both the slides and code for my talk on using OAuth 2.0 with AngularJS and WebAPI are on github for all to view.
 Slides: https://www.slideshare.net/szahn/angular-oauth-socalcodecamp-2015 Code: https://github.com/szahn/AngularWebApiOAuthDemo</description>
     </item>

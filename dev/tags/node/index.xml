@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Blog</title>
+    <link>http://localhost:39973/tags/node/</link>
+    <description>Recent content in Node on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:39973/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Use Twillio for SMS</title>
+      <link>http://localhost:39973/post/how-to-use-twillio/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:39973/post/how-to-use-twillio/</guid>
+      <description>With CRM software being high in demand, there is always a need to keep in touch with the end user. Using Twillio, you can easily register new virtual phone numbers to send and recieve text messages and voice calls.
+Phone Number Registration Imagine giving each user their own phone number. Phone number registration is simple and only costs $1 a month. To register a phone number, search for an available one by area code.</description>
+    </item>
+    
+  </channel>
+</rss>

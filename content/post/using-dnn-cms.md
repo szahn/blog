@@ -2,6 +2,7 @@
 date: 2014-04-17
 tags: [cms,dnn,windows,powershell]
 title: Using DotNetNuke (DNN) CMS
+ThumbUrl: img/code_icon.png
 ---
 
 [DotNetNuke](https://www.dnnsoftware.com/) is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on Blog</title>
-    <link>http://localhost:35825/tags/api/</link>
+    <link>http://localhost:1313/tags/api/</link>
     <description>Recent content in Api on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:35825/tags/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OAuth with AngularJS and ASP.Net WebAPI</title>
-      <link>http://localhost:35825/talk/oauth-with-angular-asp-net-web-api/</link>
+      <link>http://localhost:1313/talk/oauth-with-angular-asp-net-web-api/</link>
       <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35825/talk/oauth-with-angular-asp-net-web-api/</guid>
+      <guid>http://localhost:1313/talk/oauth-with-angular-asp-net-web-api/</guid>
       <description>My first presentation at SoCalCodeCamp (https://www.socalcodecamp.com/) in San Diego, CA was a success. Both the slides and code for my talk on using OAuth 2.0 with AngularJS and WebAPI are on github for all to view.
 Slides: https://www.slideshare.net/szahn/angular-oauth-socalcodecamp-2015 Code: https://github.com/szahn/AngularWebApiOAuthDemo</description>
     </item>
     
     <item>
       <title>Consuming the Yelp Api</title>
-      <link>http://localhost:35825/post/using-the-yelp-api/</link>
+      <link>http://localhost:1313/post/using-the-yelp-api/</link>
       <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:35825/post/using-the-yelp-api/</guid>
+      <guid>http://localhost:1313/post/using-the-yelp-api/</guid>
       <description>Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.
 I wanted to produce a final solution all Node JS and Angular JS.</description>
     </item>
