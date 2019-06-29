@@ -2,23 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Blog</title>
-    <link>http://localhost:42825/tags/javascript/</link>
+    <link>http://localhost:1313/tags/javascript/</link>
     <description>Recent content in Javascript on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:42825/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Use Twilio for SMS</title>
-      <link>http://localhost:42825/post/how-to-use-twilio/</link>
+      <link>http://localhost:1313/post/how-to-use-twilio/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/how-to-use-twilio/</guid>
+      <guid>http://localhost:1313/post/how-to-use-twilio/</guid>
       <description>With CRM software being high in demand, there is always a need to keep in touch with the end user. Using Twilio, you can easily register new virtual phone numbers to send and recieve text messages and voice calls.
 Phone Number Registration First, obtain an account sid and auth token from the console. Imagine giving each user their own phone number. Phone number registration is simple and only costs $1 a month.</description>
+    </item>
+    
+    <item>
+      <title>Converting Xml To Json in Node</title>
+      <link>http://localhost:1313/post/convert-xml-json/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/convert-xml-json/</guid>
+      <description>There are many big data solutions catering to data transformation. A common business problem when migrating data from one cloud host to another is to not only load data from one type to another, but also discover and alter the schema. Json is overtaking Xml as the popular HTTP payload format for REST services. There are big data ETL tools like AWS Glue that can scale XML and JSON transformation to gigabytes of data.</description>
     </item>
     
   </channel>

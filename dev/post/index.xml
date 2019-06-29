@@ -2,40 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog</title>
-    <link>http://localhost:42825/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:42825/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Use Twilio for SMS</title>
-      <link>http://localhost:42825/post/how-to-use-twilio/</link>
+      <link>http://localhost:1313/post/how-to-use-twilio/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/how-to-use-twilio/</guid>
+      <guid>http://localhost:1313/post/how-to-use-twilio/</guid>
       <description>With CRM software being high in demand, there is always a need to keep in touch with the end user. Using Twilio, you can easily register new virtual phone numbers to send and recieve text messages and voice calls.
 Phone Number Registration First, obtain an account sid and auth token from the console. Imagine giving each user their own phone number. Phone number registration is simple and only costs $1 a month.</description>
     </item>
     
     <item>
       <title>Make for Windows Developers</title>
-      <link>http://localhost:42825/post/gnu-make-basics/</link>
+      <link>http://localhost:1313/post/gnu-make-basics/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/gnu-make-basics/</guid>
+      <guid>http://localhost:1313/post/gnu-make-basics/</guid>
       <description>How do modern developers chain complex commands together to build software products? Javascript developers may tend to use NPM scripts, Windows developers may use a more object oriented approach with Powershell. However, Make is the tried and true approach for most build pipelines. With the advent of WSL, what used to be reserved for Linux developers, can now be used universally as a basic build command tool on all major operating systems.</description>
     </item>
     
     <item>
+      <title>Converting Xml To Json in Node</title>
+      <link>http://localhost:1313/post/convert-xml-json/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/convert-xml-json/</guid>
+      <description>There are many big data solutions catering to data transformation. A common business problem when migrating data from one cloud host to another is to not only load data from one type to another, but also discover and alter the schema. Json is overtaking Xml as the popular HTTP payload format for REST services. There are big data ETL tools like AWS Glue that can scale XML and JSON transformation to gigabytes of data.</description>
+    </item>
+    
+    <item>
       <title>Using NGrok to Expose Localhost</title>
-      <link>http://localhost:42825/post/using-ngrok/</link>
+      <link>http://localhost:1313/post/using-ngrok/</link>
       <pubDate>Thu, 21 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/using-ngrok/</guid>
+      <guid>http://localhost:1313/post/using-ngrok/</guid>
       <description>If you are developing on localhost, there may be a time you&amp;rsquo;ll want to expose your local server to the public internet for testing. For example, if you wanted to test a Zapier hook. Ngrok creates a tunnel from your localhost to the public internet to do this.
 To do this, simply run:
 ngrok http [port]</description>
@@ -43,57 +52,57 @@ ngrok http [port]</description>
     
     <item>
       <title>Summarize Web Posts with React and Python</title>
-      <link>http://localhost:42825/post/summarize-python/</link>
+      <link>http://localhost:1313/post/summarize-python/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/summarize-python/</guid>
+      <guid>http://localhost:1313/post/summarize-python/</guid>
       <description>Before the end of the year, I vowed to read all 100+ articles that were in my backlog. I had a lot of catching up to do, but if I spent only 15 minutes reading each article, it would still take all day. What if I run my archive through a summarizer so I could quickly see which articles were more important to read than others? This type of technology is not new and hard to find to free online.</description>
     </item>
     
     <item>
       <title>Migrating a Legacy Repository from SVN to Git on Windows</title>
-      <link>http://localhost:42825/post/migrating-legacy-repository-from-svn-git/</link>
+      <link>http://localhost:1313/post/migrating-legacy-repository-from-svn-git/</link>
       <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/migrating-legacy-repository-from-svn-git/</guid>
+      <guid>http://localhost:1313/post/migrating-legacy-repository-from-svn-git/</guid>
       <description>There may come a time when you stumble upon an ancient SVN repository nested with multiple projects and need to efficiently collaborate with others on a single project in that repository. Well, we all know Git is better than SVN in many ways. It&amp;rsquo;s faster and the decentralized, distributed nature of Git provides better security and redundancy. We all remember the story of codespaces.com, where a single hacker hacked into their Amazon servers in the cloud and they were forced to shut down.</description>
     </item>
     
     <item>
       <title>Consuming the Yelp Api</title>
-      <link>http://localhost:42825/post/using-the-yelp-api/</link>
+      <link>http://localhost:1313/post/using-the-yelp-api/</link>
       <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/using-the-yelp-api/</guid>
+      <guid>http://localhost:1313/post/using-the-yelp-api/</guid>
       <description>Recently, I wanted to develop a mobile app that displayed a walking city tour of your bookmarked places on Yelp so that if you are in a new city and want waypoints generated for the nearest favorite locations, you can quickly get them on the fly. This was harder than I thought because of the limitations of the Yelp API.
 I wanted to produce a final solution all Node JS and Angular JS.</description>
     </item>
     
     <item>
       <title>Analyzing .NET Assembly Architecture</title>
-      <link>http://localhost:42825/post/analyzing-net-assembly-architecture/</link>
+      <link>http://localhost:1313/post/analyzing-net-assembly-architecture/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/analyzing-net-assembly-architecture/</guid>
+      <guid>http://localhost:1313/post/analyzing-net-assembly-architecture/</guid>
       <description>Have you ever installed an IIS website only to get an error that there is an assembly with the incorrect format in the bin folder? How about when you&amp;rsquo;re installing a window service and you&amp;rsquo;re not sure if the application is 32-bit or 64-bit? Sure, there are free tools like the Telerik Decompiler that will let you poke around those .dlls to see what cpu architecture they are built for, but what if you have dozens of dlls in one folder?</description>
     </item>
     
     <item>
       <title>Using DotNetNuke (DNN) CMS</title>
-      <link>http://localhost:42825/post/using-dnn-cms/</link>
+      <link>http://localhost:1313/post/using-dnn-cms/</link>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/using-dnn-cms/</guid>
+      <guid>http://localhost:1313/post/using-dnn-cms/</guid>
       <description>DotNetNuke is a CMS in which I do a lot of web development in. For anyone that wants to get into DNN module development, below is an simple action plan to help get their feet wet.
 Review UX Design Guidelines. Remember that each version of DNN varies in its standards and guidelines. Since comprehensive documentation is hard to find for each version, do your best to support at least one major version.</description>
     </item>
     
     <item>
       <title>Optical Character Recognition</title>
-      <link>http://localhost:42825/post/optical-character-recognition/</link>
+      <link>http://localhost:1313/post/optical-character-recognition/</link>
       <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/optical-character-recognition/</guid>
+      <guid>http://localhost:1313/post/optical-character-recognition/</guid>
       <description>What is OCR? It&amp;rsquo;s short for optimal character recognition. ICR is a form of OCR but meant for reading handwritten characters. OCR is essential in any business process where documents are scanned and extracted for text or metadata in order to classify them.
 From five years of experience with OCR engines, the following are the recommendations in order:
  Tesseract Free and open sourced by Google OpenText RecoStar (Capture Recognition Engine) + Design Studio Abbyy - They also provide a screen reader for screen-scraping terminals Nuance Omnipage There are also open source, free OCR engines such as Tesseract, which was released by staff from UNLV oddly enough.</description>
@@ -101,10 +110,10 @@ From five years of experience with OCR engines, the following are the recommenda
     
     <item>
       <title>PDF Document Processing</title>
-      <link>http://localhost:42825/post/processing-pdfs/</link>
+      <link>http://localhost:1313/post/processing-pdfs/</link>
       <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/processing-pdfs/</guid>
+      <guid>http://localhost:1313/post/processing-pdfs/</guid>
       <description>If ImageMagick is the standard open source solution for image processing, then GhostScript is the equivalent for PDF processing.
 iText is an open source and commercial PDF library. You can view videos on the iText Summit here. These are great to watch if you work with PDFs.
 PDFTron works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.
@@ -113,10 +122,10 @@ pdf2image -f tiff -d 200 --mono -m 137861.</description>
     
     <item>
       <title>How to Resize Images</title>
-      <link>http://localhost:42825/post/resize-batch-images/</link>
+      <link>http://localhost:1313/post/resize-batch-images/</link>
       <pubDate>Wed, 14 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:42825/post/resize-batch-images/</guid>
+      <guid>http://localhost:1313/post/resize-batch-images/</guid>
       <description>Despite SaaS solutions like Cloudinary that can manipulate images for you in the cloud. You may still want to take advantage of free and open source libraries on your own servers. Using ImageMagick you can easily batch scale images.
 mogrify -resize x250 -quality 80 -path ../thumbs *.</description>
     </item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xml on Blog</title>
+    <link>http://localhost:1313/tags/xml/</link>
+    <description>Recent content in Xml on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Converting Xml To Json in Node</title>
+      <link>http://localhost:1313/post/convert-xml-json/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/convert-xml-json/</guid>
+      <description>There are many big data solutions catering to data transformation. A common business problem when migrating data from one cloud host to another is to not only load data from one type to another, but also discover and alter the schema. Json is overtaking Xml as the popular HTTP payload format for REST services. There are big data ETL tools like AWS Glue that can scale XML and JSON transformation to gigabytes of data.</description>
+    </item>
+    
+  </channel>
+</rss>
