@@ -1,6 +1,7 @@
 ---
 date: 2014-11-06
 tags: [svn,git,windows]
+draft: false
 title: Migrating a Legacy Repository from SVN to Git on Windows
 ThumbUrl: img/code_icon.png
 ---

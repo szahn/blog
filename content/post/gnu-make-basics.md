@@ -1,6 +1,7 @@
 ---
 date: 2018-12-04
 tags: [linux, devops]
+draft: false
 title: Make for Windows Developers
 ThumbUrl: img/gnu-icon.png
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2010-07-14
 tags: [pdf]
+draft: false
 title: How to Resize Images
 ThumbUrl: img/code_icon.png
 ---

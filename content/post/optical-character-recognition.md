@@ -1,6 +1,7 @@
 ---
 date: 2013-07-13
 tags: [ocr]
+draft: false
 title: Optical Character Recognition
 ThumbUrl: img/code_icon.png
 ---

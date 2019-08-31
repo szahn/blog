@@ -1,6 +1,7 @@
 ---
 date: 2016-01-15
 tags: [python]
+draft: false
 title: Summarize Web Posts with React and Python
 ThumbUrl: img/code_icon.png
 ---

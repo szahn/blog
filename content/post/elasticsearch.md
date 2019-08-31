@@ -1,6 +1,7 @@
 ---
 date: 2018-09-20
 tags: [elk,docker,elasticsearch]
+draft: false
 title: Centralized Logging with Elasticsearch
 ThumbUrl: img/logo-elastic.png
 ---

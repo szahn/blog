@@ -1,6 +1,7 @@
 ---
 date: 2014-04-17
 tags: [cms,dnn,windows,powershell]
+draft: false
 title: Using DotNetNuke (DNN) CMS
 ThumbUrl: img/code_icon.png
 ---

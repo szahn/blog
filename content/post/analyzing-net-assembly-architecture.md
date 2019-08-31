@@ -1,6 +1,7 @@
 ---
 date: 2014-04-22
 tags: [.net, csharp]
+draft: true
 title: Analyzing .NET Assembly Architecture
 ThumbUrl: img/code_icon.png
 ---

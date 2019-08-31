@@ -1,6 +1,7 @@
 ---
 date: 2013-05-18
 tags: [pdf]
+draft: false
 title: PDF Document Processing
 ThumbUrl: img/code_icon.png
 ---
