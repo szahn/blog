@@ -1,0 +1,176 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid {
+  margin: auto;
+}
+
+.navbar-nav{
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Oswald', sans-serif;
+}
+
+#page-title {
+    text-align: center;
+}
+
+#page-title h1 a {
+    color: black;
+    font-size: 2rem;
+}
+
+.post{
+  padding-bottom: 12px;
+}
+
+.post a {
+    color: black;
+}
+
+#author-name h6 a {
+  color: black;
+  font-weight: normal;
+  font-size: small;
+}
+
+#page-title a:hover, .post a:hover {
+    text-decoration: underline;
+}
+
+.date-time-title {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.blog-post-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.posts_listing li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4  {
+  font-size: 1.2rem;
+}
+
+h5  {
+  font-size: 1rem;
+}
+
+h6  {
+  font-size: 0.8rem;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+pre {
+  overflow-x: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid lighten(#111, 90);
+  background-color: #efefef
+}
+
+footer  {
+  text-align: center;
+  padding: 20px;  
+}
+
+.navbar-nav{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar-nav a{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-nav a:hover{
+  background: none;
+  color: #000;
+}
+
+a {
+  padding: 4px;  
+}
+
+a:hover{
+  text-decoration: none !important;
+}
+
+
+code{
+  color: #5b3c51;
+}
+
+pre code{
+  color: #5b3c51;
+}
+
+#page-title{
+  padding-bottom: 20px;
+}
+
+.blog-post-content img{
+  max-width:100% !important;
+  height:auto !important;
+}
+
+.post a {
+  vertical-align: middle;
+}
+
+.post time {
+  color:#777;
+}
+
+.faded{
+  color:#777;
+}
+
+.post .title {
+  font-size:1.2rem;
+}
+
+.post-thumb-col{
+  max-width: 80px;
+}
+
+.post-thumb-col img {
+  width:64px;
+  height:64px;
+}
+
+
+body {
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+}
+
+.tag-list {
+  padding-bottom: 20px;
+}

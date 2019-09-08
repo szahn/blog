@@ -1,0 +1,33 @@
+{{ define "content" }}
+<section>
+    {{ partial "taxonomies.html" . }}
+</section>
+<section>
+  {{ range (.Pages).GroupByDate "2006"}}
+  {{ if gt (len .Pages) 0 }}
+  <div class="row>">
+    <div class="col">
+        <h2>{{ .Key }}</h2>
+    </div>
+  </div>
+  <div class="posts_listing">
+    {{ range .Pages.ByDate.Reverse }}
+    <div class="row post" class="posts">
+      <div class="col post-thumb-col">
+          <img src="{{ .Params.ThumbUrl | absURL}}"/>
+      </div>
+      <div class="col">
+        <div class="row title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+        <div class="row date-time-title">
+            <time>{{ .Date.Format "02 Jan 2006" }}</time>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</section>
+{{ end }}

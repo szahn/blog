@@ -1,0 +1,13 @@
+{{ define "content" }}
+<div class="blog-post">
+  <div class="blog-post-subheader">
+    <time>{{ .Date.Format "02 Jan 2006" }}</time>
+  </div>
+  <div>
+    {{ partial "post-tags" . }}
+  </div>
+  <div class="blog-post-content">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

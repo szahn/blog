@@ -1,0 +1,15 @@
+<div class="row>">
+    <div class="col">
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+            {{ if gt (len $taxonomy) 0 }}
+            <div class="tag-list">
+                {{ range $name, $value := $taxonomy }}
+                <a class="" href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">
+                    <span class="badge badge-light">{{ $name }}</span>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>

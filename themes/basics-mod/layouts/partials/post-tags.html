@@ -1,0 +1,9 @@
+{{ if .Params.tags }}
+<div>
+    {{ range .Params.tags }}    
+        <a href="{{ "/tags/" }}{{ . | urlize }}">
+            <span class="badge badge-light">{{ . }}</span>
+        </a>
+    {{ end }}
+</div>
+{{ end }}
