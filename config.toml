@@ -9,9 +9,6 @@ PygmentsStyle = "emacs"
 [taxonomies]
   tag = "tags"
   thought = "thoughts"
-  talk = "talks"
-  book = "books"
-  howto = "howto"
 
 [params]
     author = "Stuart Zahn"
