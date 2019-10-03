@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>Centralized Logging with Elasticsearch</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">Centralized Logging with Elasticsearch</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/elk">
+            <span class="badge badge-light">elk</span>
+        </a>
+        
+        <a href="/tags/docker">
+            <span class="badge badge-light">docker</span>
+        </a>
+        
+        <a href="/tags/elasticsearch">
+            <span class="badge badge-light">elasticsearch</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<h1 id="how-to-centralize-logging-with-elasticsearch-logstash-kibana">How to Centralize Logging with Elasticsearch, Logstash, Kibana</h1>
+
+<h2 id="what-is-elk">What is ELK?</h2>
+
+<p>An ELK stack is usually made up of system log listener middleware such as <a href="https://www.elastic.co/products/logstash">Logstash</a>. It runs in the background as a daemon or process that collects stream of information from flat files. <a href="https://www.elastic.co/products/kibana">Kibana</a> is the UI for search through logs interactively. Sure, you can use <code>grep</code> or <code>curl</code> the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html">REST API</a> to search through logs, but having a user interface makes it much easier to visualize events and key metrics.</p>
+
+<h2 id="why-elk">Why ELK?</h2>
+
+<p>Having a single point of access to applications and system logs is essential to root cause analysis and troubleshooting. The ELK stack makes it possible to aggregate and search through logs.</p>
+
+<p>There used to be a time when, if you had one service running on Windows that requried doing a full text search on 30 days worth of logs, you&rsquo;d just open <a href="https://www.fileseek.ca/">FileSeek</a> and you&rsquo;re good to go. This approach, does not scale for gigabytes of daily logs.</p>
+
+<p>There are plenty of hosted logging solutions like <a href="https://aws.amazon.com/cloudwatch/">AWS CloudWatch</a> <a href="https://sentry.io">Sentry</a>, <a href="https://www.honeycomb.io/">Honeycomb</a>, <a href="https://cloud.google.com/stackdriver/">Stackdriver</a>. Depending on the volume of logs, you may want to host your own ELK cluster as services like hosted logging may be too costly to retain all log levels over time.</p>
+
+<p>The ELK pipeline lets you choose where logs come from, how they are formatted and where they go.</p>
+
+<h2 id="native-centralized-logging">Native Centralized Logging</h2>
+
+<p>Although it&rsquo;s recommended to use Kubernetes to run Elasticsearch in Docker containers, if you are on an on-premise or local environment where container technology isn&rsquo;t available, you can also run the full ELK stack natively.</p>
+
+<h3 id="install-elasticsearch-service">Install Elasticsearch Service</h3>
+
+<p><a href="https://www.elastic.co/downloads/elasticsearch">Download Elasticsearch</a></p>
+
+<p>You can use a package manager or download the binary manually</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-amd64.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-amd64.deb.sha512
+shasum -a <span style="color:#666">512</span> -c elasticsearch-7.2.0-amd64.deb.sha512 
+sudo dpkg -i elasticsearch-7.2.0-amd64.deb</code></pre></div>
+<p>If using systemd, to start the service, run:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl <span style="color:#a2f">enable</span> elasticsearch.service
+sudo systemctl start elasticsearch.service</code></pre></div>
+<p>The default Logtash port is 9200. Confirm logstash is running with <code>curl http://localhost:9200</code></p>
+
+<h4 id="configuring-elasticsearch">Configuring Elasticsearch</h4>
+
+<p>Create a new index: <code>curl -XPUT 'http://localhost:9200/test_index?&amp;pretty</code></p>
+
+<p>Index a document:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -XPOST <span style="color:#b44">&#39;http://localhost:9200/test_index/_doc/1?pretty&#39;</span> -d <span style="color:#b44">&#39;{&#34;message&#34;:&#34;hello world&#34;}&#39;</span> -H <span style="color:#b44">&#39;Content-Type: application/json&#39;</span></code></pre></div>
+<p>Query the index:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -H<span style="color:#b44">&#39;Content-Type: application/json&#39;</span> -XPOST <span style="color:#b44">&#34;http://localhost:9200/test_index/_search?&amp;pretty&#34;</span> -d<span style="color:#b44">&#39;{&#34;query&#34;: {&#34;match&#34;: {&#34;message&#34;: &#34;hello world&#34;}}}&#39;</span></code></pre></div>
+<h3 id="install-kibana">Install Kibana</h3>
+
+<p><a href="https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb">Install Kibana</a> using a package manager.</p>
+
+<p>In Debian, you could install it manually with</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://artifacts.elastic.co/downloads/kibana/kibana-7.2.0-amd64.deb
+shasum -a <span style="color:#666">512</span> kibana-7.2.0-amd64.deb 
+sudo dpkg -i kibana-7.2.0-amd64.deb</code></pre></div>
+<p>Start the service:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl <span style="color:#a2f">enable</span> kibana.service
+sudo -i service kibana start</code></pre></div>
+<p>Then, visit the homepage: <code>xdg-open http://localhost:5601</code></p>
+
+<p>Be sure to create a default index pattern</p>
+
+<h3 id="install-logstash-binary">Install Logstash Binary</h3>
+
+<p>On Debian, ensure Java 8 or 11 is installed with <code>java -version</code>.  Install Open Java with <code>sudo apt-get install openjdk-9-jdk-headless</code></p>
+
+<p><a href="https://www.elastic.co/downloads/logstash">Install Logstash</a> with <code>sudo apt-get update &amp;&amp; sudo apt-get install logstash</code> or download the binary directly with <code>curl -O https://artifacts.elastic.co/downloads/logstash/logstash-7.2.0.zip &amp;&amp; unzip logstash-7.2.0.zip</code></p>
+
+<p>Configure the <code>logstash.conf</code> for your system</p>
+
+<p>The example configuration below will feed all system logs to logstash which isn&rsquo;t something you should do in production</p>
+
+<pre><code>input { 
+    file { 
+        id =&gt; &quot;system_logs&quot; 
+        path =&gt; &quot;/var/log/*.log&quot;
+    } 
+}
+
+output {
+  elasticsearch { hosts =&gt; [&quot;localhost:9200&quot;] }
+  stdout { codec =&gt; rubydebug }
+}```
+
+Run Logstash:
+
+</code></pre>
+
+<p>bash
+bin/logstash -f ~/logstash.conf
+```</p>
+
+<h2 id="containerized-elk">Containerized ELK</h2>
+
+<p>You can run Elasticsearch on Docker. Due to <a href="https://www.elastic.co/blog/docker-networking">Docker networking complexities</a>, it&rsquo;s recommended to use the <a href="https://www.elastic.co/elasticsearch-kubernetes">Kubernetes operator</a>.</p>
+
+<h2 id="hosted-elk">Hosted ELK</h2>
+
+<p>Amazon provides a <a href="https://aws.amazon.com/elasticsearch-service/">hosted Elasticsearch service</a> which is recommended if you are ok with paying for an Elasticsearch EC2 instance.</p>
+
+<h1 id="tl-dr">TL;DR</h1>
+
+<p>Hosting your own Elasticsearch service is simple. Use an on-premise ELK cluster if you have high volume of data with a long retention period, otherwise, use a managed centralized logging provider.</p>
+
+    <time class="faded">20 Sep 2018</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=33267&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+

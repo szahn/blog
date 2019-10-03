@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>PDF Document Processing</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">PDF Document Processing</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/pdf">
+            <span class="badge badge-light">pdf</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>If <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> is the standard open source solution for image processing, then <a href="https://www.ghostscript.com/">GhostScript</a> is the equivalent for PDF processing.</p>
+
+<p>iText is an open source and commercial PDF library. You can view videos on the <a href="http://itextpdf.com/summit.php">iText Summit here</a>. These are great to watch if you work with PDFs.</p>
+
+<p><a href="http://www.pdftron.com/pdf2image/">PDFTron</a> works well even if the pdf has old fonts that are no longer in production such as Arial Bold MT.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pdf2image -f tiff -d <span style="color:#666">200</span> --mono -m <span style="color:#666">137861</span>.pdf</code></pre></div>
+<p>Leadtools has been a long favorite due to <a href="http://demo.leadtools.com/HTML5/ThumbnailDemo.htm">performance and features</a></p>
+
+<h2 id="dealing-with-password-protected-pdfs">Dealing with password protected PDFs</h2>
+
+<p>There are 2 forms of PDF security: permissions and a password. In order to full utilize all the features of a PDF (such as ready, modify and extract), you have to ensure that the PDFs permissions are set properly.</p>
+
+<p>SysTools PDF Unlocker.  It will remove the security from the PDF (except the password protection). The application is simple.  Point the app to the secured PDF, then point to a directory to save the unlocked PDF.  Rename the PDF to the original name and drop it back into the batch folder.</p>
+
+<p>To fix the Password Protection on a PDF you can use a PDF toolkit to programmatically remove the Security from the PDFs, but again, not the password protection. The tool that I used was the PDFKit.NET from <a href="www.tallcomponents.com">Tall Components</a>. AdultPDF Decryption may also remove passwords.</p>
+
+    <time class="faded">18 May 2013</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=33267&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+

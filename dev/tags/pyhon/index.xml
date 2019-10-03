@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pyhon on Blog</title>
+    <link>http://localhost:33267/tags/pyhon/</link>
+    <description>Recent content in pyhon on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/pyhon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Scrape the Web</title>
+      <link>http://localhost:33267/post/how-to-scrape-the-web/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/how-to-scrape-the-web/</guid>
+      <description>From scraping Amazon product reviews, to individual product SKUs and more, automatic web crawling is still a very common business need today. The ability to utilize a cluster of workers to automatically turn html into meaningful data is a very real business proposition. There are many ways to scale automatic web crawling. With the advent of Kubernetes and Docker Swarm, running a replica of 100x containers is very easy to do.</description>
+    </item>
+    
+  </channel>
+</rss>

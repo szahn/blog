@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Blog</title>
+    <link>http://localhost:33267/tags/aws/</link>
+    <description>Recent content in aws on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using AWS to Convert a Newsletter to a Static Site</title>
+      <link>http://localhost:33267/post/email-newsletter-to-static-site/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/email-newsletter-to-static-site/</guid>
+      <description>Components  Cloudformation deployment Lambdas DynamoDB for metadata S3 for raw data (html, txt, json, markdown) SQS for batching Hugo  How to Crawl a Website Lambda Functions What about updates? Lambdas can be triggered on a cron job</description>
+    </item>
+    
+    <item>
+      <title>Serverless React Forms on AWS</title>
+      <link>http://localhost:33267/post/serverless-react-forms/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/serverless-react-forms/</guid>
+      <description> Cloudformation template DynamoDB, React, S3 static site Serverless CSRF tokens  </description>
+    </item>
+    
+    <item>
+      <title>Deploying Node to AWS with Terraform</title>
+      <link>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</guid>
+      <description>DevOps Automation  A DevOps mindset requires &amp;ldquo;Highly effective, daily collaboration between software developers and IT operations people to produce relevant, working systems&amp;rdquo; &amp;mdash;https://skeltonthatcher.com/blog/a-useful-working-definition-of-devops/
+In order to build and operate the kinds of complex, distributed software systems required for 2018 and beyond, we need to emphasize effectiveness over efficiency for technical teams. Delivering changes rapidly, reliably, and repeatedly is not possible if we aim to minimize ‘costs’ at specific points of the value chain, as this kind of efficiency usually ends up causing unnecessary constraints.</description>
+    </item>
+    
+  </channel>
+</rss>

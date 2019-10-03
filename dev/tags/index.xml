@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Blog</title>
+    <link>http://localhost:33267/tags/</link>
+    <description>Recent content in Tags on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>html</title>
+      <link>http://localhost:33267/tags/html/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>http://localhost:33267/tags/node/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyhon</title>
+      <link>http://localhost:33267/tags/pyhon/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/pyhon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>http://localhost:33267/tags/aws/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>http://localhost:33267/tags/email/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static</title>
+      <link>http://localhost:33267/tags/static/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>http://localhost:33267/tags/react/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serverless</title>
+      <link>http://localhost:33267/tags/serverless/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://localhost:33267/tags/docker/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ec2</title>
+      <link>http://localhost:33267/tags/ec2/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/ec2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terraform</title>
+      <link>http://localhost:33267/tags/terraform/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>http://localhost:33267/tags/api/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crm</title>
+      <link>http://localhost:33267/tags/crm/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/crm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>http://localhost:33267/tags/javascript/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>http://localhost:33267/tags/devops/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://localhost:33267/tags/linux/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elasticsearch</title>
+      <link>http://localhost:33267/tags/elasticsearch/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elk</title>
+      <link>http://localhost:33267/tags/elk/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data</title>
+      <link>http://localhost:33267/tags/data/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>etl</title>
+      <link>http://localhost:33267/tags/etl/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/etl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>json</title>
+      <link>http://localhost:33267/tags/json/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xml</title>
+      <link>http://localhost:33267/tags/xml/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://localhost:33267/tags/python/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://localhost:33267/tags/git/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>svn</title>
+      <link>http://localhost:33267/tags/svn/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/svn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>http://localhost:33267/tags/windows/</link>
+      <pubDate>Thu, 06 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.net</title>
+      <link>http://localhost:33267/tags/.net/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csharp</title>
+      <link>http://localhost:33267/tags/csharp/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cms</title>
+      <link>http://localhost:33267/tags/cms/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/cms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dnn</title>
+      <link>http://localhost:33267/tags/dnn/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/dnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>http://localhost:33267/tags/powershell/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ocr</title>
+      <link>http://localhost:33267/tags/ocr/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/ocr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf</title>
+      <link>http://localhost:33267/tags/pdf/</link>
+      <pubDate>Sat, 18 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Blog</title>
+    <link>http://localhost:33267/tags/docker/</link>
+    <description>Recent content in docker on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploying Node to AWS with Terraform</title>
+      <link>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</guid>
+      <description>DevOps Automation  A DevOps mindset requires &amp;ldquo;Highly effective, daily collaboration between software developers and IT operations people to produce relevant, working systems&amp;rdquo; &amp;mdash;https://skeltonthatcher.com/blog/a-useful-working-definition-of-devops/
+In order to build and operate the kinds of complex, distributed software systems required for 2018 and beyond, we need to emphasize effectiveness over efficiency for technical teams. Delivering changes rapidly, reliably, and repeatedly is not possible if we aim to minimize ‘costs’ at specific points of the value chain, as this kind of efficiency usually ends up causing unnecessary constraints.</description>
+    </item>
+    
+    <item>
+      <title>Centralized Logging with Elasticsearch</title>
+      <link>http://localhost:33267/post/elasticsearch/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/elasticsearch/</guid>
+      <description>How to Centralize Logging with Elasticsearch, Logstash, Kibana What is ELK? An ELK stack is usually made up of system log listener middleware such as Logstash. It runs in the background as a daemon or process that collects stream of information from flat files. Kibana is the UI for search through logs interactively. Sure, you can use grep or curl the REST API to search through logs, but having a user interface makes it much easier to visualize events and key metrics.</description>
+    </item>
+    
+  </channel>
+</rss>

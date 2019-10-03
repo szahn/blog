@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>How to Scrape the Web</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">How to Scrape the Web</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/html">
+            <span class="badge badge-light">html</span>
+        </a>
+        
+        <a href="/tags/pyhon">
+            <span class="badge badge-light">pyhon</span>
+        </a>
+        
+        <a href="/tags/node">
+            <span class="badge badge-light">node</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>From scraping Amazon product reviews, to individual product SKUs and more, automatic web crawling is still a very common business need today. The ability to utilize a cluster of workers to automatically turn html into meaningful data is a very real business proposition. There are many ways to scale automatic web crawling. With the advent of Kubernetes and Docker Swarm, running a replica of 100x containers is very easy to do. However, it&rsquo;s very easy to get blacklisted if not properly throttling those workers.</p>
+
+<h2 id="web-scraping-pitfalls">Web Scraping Pitfalls</h2>
+
+<p>There are many pitfalls to automatic web scraping, such as captchas and device fingerprinting. Once the server recognizes the client by IP or unique device code, it can easily block additional requests. Yes, it&rsquo;s quite possible for each client to have a <a href="https://fingerprintjs.com/">unique fingerprint</a> that&rsquo;s difficult to spoof.</p>
+
+<p>Solutions to common pitfals may involve Ipv4 address pool diversification, decoupling crawling with Pub/Sub message queues and state machines to properly handing batching, failure and retries. In AWS, one can utilize SQS and Step Functions.</p>
+
+<h2 id="scraping-html-with-python">Scraping HTML with Python</h2>
+
+<p>To scrape data from websites in Python, the <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> library in combination with <a href="https://facelessuser.github.io/soupsieve/">SoupSieve</a> for css selector queries is recommended.</p>
+
+<p>Extracting data from html is quite easy. For example, to print low tides per city to the console, table body cells can be identified per row by CSS class selectors. See the <a href="https://github.com/szahn/LowTideScraper">full source code here</a>.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">  soup <span style="color:#666">=</span> BeautifulSoup(html, <span style="color:#b44">&#39;html.parser&#39;</span>)
+  tr <span style="color:#666">=</span> sv<span style="color:#666">.</span>select(<span style="color:#b44">&#34;.tide-table &gt; tr&#34;</span>,  soup)
+
+  curr_date <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+  timeofday <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+
+  <span style="color:#a2f;font-weight:bold">for</span> el <span style="color:#a2f;font-weight:bold">in</span> tr:
+    dateInst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;.date&#34;</span>, el)
+    <span style="color:#a2f;font-weight:bold">if</span> dateInst <span style="color:#666">!=</span> None:
+      curr_date <span style="color:#666">=</span> dateInst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+
+    tide_time <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+    tide_time_inst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;.time&#34;</span>, el)
+    <span style="color:#a2f;font-weight:bold">if</span> tide_time_inst <span style="color:#666">!=</span> None:
+      tide_time <span style="color:#666">=</span> tide_time_inst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+    
+    timezone <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+    timezone_inst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;.time-zone&#34;</span>, el)
+    <span style="color:#a2f;font-weight:bold">if</span> tide_time_inst <span style="color:#666">!=</span> None:
+      timezone <span style="color:#666">=</span> timezone_inst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+    
+    level <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+    level_inst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;.level&#34;</span>, el)
+    <span style="color:#a2f;font-weight:bold">if</span> level_inst <span style="color:#666">!=</span> None:
+      level <span style="color:#666">=</span> level_inst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+    
+
+    tide_phase <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+    tide_phase_inst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;.tide:last-child&#34;</span>, el)
+    <span style="color:#a2f;font-weight:bold">if</span> tide_phase_inst <span style="color:#666">!=</span> None:
+      tide_phase <span style="color:#666">=</span> tide_phase_inst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+    <span style="color:#a2f;font-weight:bold">else</span>:
+      timeofday_inst <span style="color:#666">=</span> sv<span style="color:#666">.</span>select_one(<span style="color:#b44">&#34;td:last-child&#34;</span>, el)
+      <span style="color:#a2f;font-weight:bold">if</span> timeofday_inst <span style="color:#666">!=</span> None:
+        timeofday_val <span style="color:#666">=</span> timeofday_inst<span style="color:#666">.</span>text<span style="color:#666">.</span>strip()
+        <span style="color:#a2f;font-weight:bold">if</span> timeofday_val <span style="color:#666">==</span> <span style="color:#b44">&#34;Sunrise&#34;</span>:
+          timeofday <span style="color:#666">=</span> timeofday_val
+        <span style="color:#a2f;font-weight:bold">elif</span> timeofday_val <span style="color:#666">==</span> <span style="color:#b44">&#34;Sunset&#34;</span>:
+          timeofday <span style="color:#666">=</span> timeofday_val
+        <span style="color:#a2f;font-weight:bold">else</span>:
+          timeofday <span style="color:#666">=</span> <span style="color:#b44">&#34;&#34;</span>
+
+    <span style="color:#a2f;font-weight:bold">if</span> tide_phase <span style="color:#666">==</span> <span style="color:#b44">&#34;Low Tide&#34;</span> <span style="color:#a2f;font-weight:bold">and</span> (timeofday <span style="color:#666">==</span> <span style="color:#b44">&#34;Sunrise&#34;</span> <span style="color:#a2f;font-weight:bold">or</span> timeofday <span style="color:#666">==</span> <span style="color:#b44">&#34;Sunset&#34;</span>):
+      <span style="color:#a2f;font-weight:bold">print</span>(<span style="color:#b44">&#39;{0} {1} {2} {3} {4}&#39;</span><span style="color:#666">.</span>format(city, curr_date, tide_time, timezone, level))</code></pre></div>
+<h2 id="scraping-with-headless-chrome">Scraping with Headless Chrome</h2>
+
+<p>Headless Chrome, or <a href="https://pptr.dev/">Puppeteer</a> is also a recommended approach to scraping web sites. You get the full power and overhead of a Chrome Browser binary with the ability to <code>eval</code> Javascript. Since you can execute Javascript, you can easily simulate user behavior such as mouse movement, page scrolling, and form data. So, it&rsquo;s pretty easy to script a login sequence to access private data.</p>
+
+<p>For example, to script logging into LinkedIn, you may code the following:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a2f;font-weight:bold">const</span> puppeteer <span style="color:#666">=</span> require(<span style="color:#b44">&#39;puppeteer&#39;</span>);
+
+<span style="color:#a2f;font-weight:bold">async</span> <span style="color:#a2f;font-weight:bold">function</span> init({isHeadless}) {
+    <span style="color:#a2f;font-weight:bold">const</span> browser <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">await</span> puppeteer.launch({
+        headless<span style="color:#666">:</span> isHeadless,
+        args<span style="color:#666">:</span>[<span style="color:#b44">&#39;--no-sandbox&#39;</span>] <span style="color:#080;font-style:italic">/*See https://github.com/karma-runner/karma-chrome-launcher/issues/158 */</span>
+    });
+
+    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">await</span> browser.newPage();
+}
+
+<span style="color:#a2f;font-weight:bold">const</span> login <span style="color:#666">=</span> (opts =&gt; <span style="color:#a2f;font-weight:bold">async</span> page =&gt;  {
+    <span style="color:#a2f;font-weight:bold">await</span> page.<span style="color:#a2f;font-weight:bold">goto</span>(<span style="color:#b44">&#39;https://www.linkedin.com/login&#39;</span>);
+
+    <span style="color:#a2f;font-weight:bold">await</span> page.type(<span style="color:#b44">&#39;#username&#39;</span>, opts.username);
+    <span style="color:#a2f;font-weight:bold">await</span> page.type(<span style="color:#b44">&#39;#password&#39;</span>, opts.password);
+    <span style="color:#a2f;font-weight:bold">await</span> page.click(<span style="color:#b44">&#39;.login__form button&#39;</span>);
+    <span style="color:#a2f;font-weight:bold">await</span> page.waitForNavigation();
+
+    <span style="color:#a2f;font-weight:bold">return</span> page;
+});
+
+(<span style="color:#a2f;font-weight:bold">async</span> <span style="color:#a2f;font-weight:bold">function</span> index() {
+    <span style="color:#a2f;font-weight:bold">try</span> {
+
+        init({isHeadless<span style="color:#666">:</span> <span style="color:#a2f;font-weight:bold">false</span>})
+        .then(login({
+            username<span style="color:#666">:</span> process.argv[<span style="color:#666">2</span>] <span style="color:#666">||</span> process.env.USERNAME, 
+            password<span style="color:#666">:</span> process.argv[<span style="color:#666">3</span>] <span style="color:#666">||</span> process.env.PASSWORD}
+        ))
+        .<span style="color:#a2f;font-weight:bold">catch</span>(err =&gt; {
+            console.error(err);
+        })
+        .<span style="color:#a2f;font-weight:bold">finally</span>(() =&gt; {
+            console.log(<span style="color:#b44">&#34;Finished&#34;</span>);
+        });
+
+    }
+    <span style="color:#a2f;font-weight:bold">catch</span> (error){
+        console.error(error);
+    }
+})()
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node index.js username password</code></pre></div>
+<h2 id="scraping-web-feeds-with-aws">Scraping Web Feeds with AWS</h2>
+
+<p>In addition to HTML, RSS feeds or JSON REST API endpoints are also a common resource to scrape. For example, if you want to migrate a newsletter feed from one service provider to another, you can scrape the RSS feed. To do this gracefully without exceeding the SLA, you can utilize cloud managed queues and blob storage.</p>
+
+<p><img src="/img/AWSCrawler.png" alt="Image" /></p>
+
+    <time class="faded">15 Aug 2019</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=33267&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+

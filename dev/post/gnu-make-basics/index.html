@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>Make for Windows Developers</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">Make for Windows Developers</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/linux">
+            <span class="badge badge-light">linux</span>
+        </a>
+        
+        <a href="/tags/devops">
+            <span class="badge badge-light">devops</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<p>How do modern developers chain complex commands together to build software products? Javascript developers may tend to use <a href="https://docs.npmjs.com/misc/scripts">NPM scripts</a>, Windows developers may use  a more object oriented approach with Powershell. However, <code>Make</code> is the tried and true approach for most build pipelines. With the advent of <a href="https://docs.microsoft.com/en-us/windows/wsl/faq">WSL</a>, what used to be reserved for Linux developers, can now be used universally as a basic build command tool on all major operating systems.</p>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>There are several versions of make available, like <a href="https://cmake.org/">CMake</a> some better than others. If you are on OSX, you&rsquo;ll need to install the XCode Command Line Tools. Ubuntu should already have make installed. On a Linux debian system like Ubuntu, if you don&rsquo;t already have <code>make</code>, run <code>sudo apt-get install build-essential</code>. On Windows, you should download the WSL.</p>
+
+<h1 id="make-basics">Make Basics</h1>
+
+<p>A Makefile is a plain text file that is tab sensitive. Meaning, commannds are separated by tabs and line breaks, therefore, it&rsquo;s important to use an editor with the correct encoding. The basic structure of a modern Makefile might look like the following. A makefile basically is a better way to organize a bunch of shell scripts. Each make command basically just spins up it&rsquo;s own shell process.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Makefile" data-lang="Makefile"><span style="color:#00a000">clean</span><span style="color:#666">:</span>
+    @echo <span style="color:#b44">&#34;Cleaning build&#34;</span>
+
+<span style="color:#00a000">build</span><span style="color:#666">:</span> clean
+    @npm run build
+
+<span style="color:#00a000">run</span><span style="color:#666">:</span> build
+    @sudo docker run -it alpine
+</code></pre></div>
+<p>To run this Makefile, just type <code>make run</code> on the console.</p>
+
+<p>Create a <code>Makefile</code> on your project root folder and start writing build commands. You can chain them together, introduce environment variables and even nest makefiles to call then recursively. Below is an example of one that does a variety of things.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Makefile" data-lang="Makefile"><span style="color:#080;font-style:italic"># Gets the version from the initialized git repository
+</span><span style="color:#080;font-style:italic"></span><span style="color:#b8860b">version</span><span style="color:#666">:=</span><span style="color:#a2f;font-weight:bold">$(</span>shell git rev-parse --short HEAD<span style="color:#a2f;font-weight:bold">)</span>
+
+<span style="color:#080;font-style:italic"># Prints the version
+</span><span style="color:#080;font-style:italic"></span><span style="color:#00a000">print_version</span><span style="color:#666">:</span>
+	@echo <span style="color:#b44">&#34;Commit: </span><span style="color:#b68;font-weight:bold">${</span><span style="color:#b8860b">version</span><span style="color:#b68;font-weight:bold">}</span><span style="color:#b44">&#34;</span>
+</code></pre></div>
+<h1 id="a-real-world-example">A Real World Example</h1>
+
+<p>I actually use make to build my Hugo blog and below is what the build process looks like. So, building and publishing my blog to AWS S3 as a static site is as simple as calling <code>make deploy -B</code>.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Makefile" data-lang="Makefile"><span style="color:#00a000">clean</span><span style="color:#666">:</span>
+	rm -rf public
+
+<span style="color:#00a000">publish</span><span style="color:#666">:</span> clean
+	hugo -s ./
+
+<span style="color:#00a000">serve</span><span style="color:#666">:</span>
+	hugo server -wDs ./ -d dev &amp; xdg-open http://localhost:1313/
+
+<span style="color:#00a000">deploy</span><span style="color:#666">:</span> publish
+	aws s3 cp public/ s3://blog.stuartzahn.net --recursive  --include <span style="color:#b44">&#34;*&#34;</span> --acl public-read
+</code></pre></div>
+    <time class="faded">04 Dec 2018</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=33267&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+

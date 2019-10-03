@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>static on Blog</title>
+    <link>http://localhost:33267/tags/static/</link>
+    <description>Recent content in static on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/static/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using AWS to Convert a Newsletter to a Static Site</title>
+      <link>http://localhost:33267/post/email-newsletter-to-static-site/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/email-newsletter-to-static-site/</guid>
+      <description>Components  Cloudformation deployment Lambdas DynamoDB for metadata S3 for raw data (html, txt, json, markdown) SQS for batching Hugo  How to Crawl a Website Lambda Functions What about updates? Lambdas can be triggered on a cron job</description>
+    </item>
+    
+  </channel>
+</rss>

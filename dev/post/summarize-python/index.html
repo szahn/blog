@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>Summarize Web Posts with React and Python</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">Summarize Web Posts with React and Python</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/python">
+            <span class="badge badge-light">python</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    <p>Before the end of the year, I vowed to read all 100+ articles that were in my backlog. I had a lot of catching up to do, but if I spent only 15 minutes reading each article, it would still take all day. What if I run my archive through a summarizer so I could quickly see which articles were more important to read than others? This type of technology is not new and hard to find to free online. Both Google and Yahoo have recently acquired startups that summarize online content, so finding a free solution is difficult. There are sites out there that will summarize content for you, and some have APIs, but charge for them. I wanted a free, quick way to summarize content online.</p>
+
+<p>After searching for any open source repositories, I eventually found one that might work which was adapted from <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5392672">The Automatic Creation of Literature Abstracts&rdquo;</a> by H.P. Luhn. A majority of autosummarizers on GitHub are actually written in Python, so I had to familiarize myself with the language. Python is a great language because of its data structures and poetic-like syntax.</p>
+
+<p>It took about 2 minutes to summarize 98 post which is about 1.3 seconds a post. Not the fastest or more accurate algorithm.</p>
+
+<p>Once I had json data of the summaries, I could focus on building a quick user interface. I chose ReactJS because of it’s fast, virtual dom rendering. I also enjoy the declarative nature of JSX in React. It feels like writing XAML where the markup you write is what will be rendered.</p>
+
+<p>Check out the server and client code at <a href="https://github.com/szahn/ArticleSummary">GitHub</a>.</p>
+
+    <time class="faded">15 Jan 2016</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=33267&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+

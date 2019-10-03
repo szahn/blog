@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ec2 on Blog</title>
+    <link>http://localhost:33267/tags/ec2/</link>
+    <description>Recent content in ec2 on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:33267/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploying Node to AWS with Terraform</title>
+      <link>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:33267/post/deploy-node-aws-ec2-terraform/</guid>
+      <description>DevOps Automation  A DevOps mindset requires &amp;ldquo;Highly effective, daily collaboration between software developers and IT operations people to produce relevant, working systems&amp;rdquo; &amp;mdash;https://skeltonthatcher.com/blog/a-useful-working-definition-of-devops/
+In order to build and operate the kinds of complex, distributed software systems required for 2018 and beyond, we need to emphasize effectiveness over efficiency for technical teams. Delivering changes rapidly, reliably, and repeatedly is not possible if we aim to minimize ‘costs’ at specific points of the value chain, as this kind of efficiency usually ends up causing unnecessary constraints.</description>
+    </item>
+    
+  </channel>
+</rss>

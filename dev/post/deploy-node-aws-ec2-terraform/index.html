@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Source+Code+Pro" rel="stylesheet">
+        <title>Deploying Node to AWS with Terraform</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light">
+    
+    <span class="navbar-brand mb-0 h1"></span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Posts</a>
+            <a class="nav-item nav-link" href="/thought">Thoughts</a>
+            <a class="nav-item nav-link" href="/quotes">Quotes</a>
+            <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+    </div>
+</nav>
+
+      <div class="container-fluid">
+          <section id="page-title">
+            <h1><a href="/">Deploying Node to AWS with Terraform</a></h1>
+            <span id="author-name">
+              <h6><a href="/about/">Stuart Zahn</a></h6>
+            </span>
+          </section>
+
+
+<div class="blog-post">
+  <div class="blog-post-subheader">
+  </div>
+  <div>
+    
+<div>
+        
+        <a href="/tags/docker">
+            <span class="badge badge-light">docker</span>
+        </a>
+        
+        <a href="/tags/terraform">
+            <span class="badge badge-light">terraform</span>
+        </a>
+        
+        <a href="/tags/aws">
+            <span class="badge badge-light">aws</span>
+        </a>
+        
+        <a href="/tags/ec2">
+            <span class="badge badge-light">ec2</span>
+        </a>
+        
+        <a href="/tags/node">
+            <span class="badge badge-light">node</span>
+        </a>
+    
+</div>
+
+  </div>
+  <div class="blog-post-content">
+    
+
+<h1 id="devops-automation">DevOps Automation</h1>
+
+<blockquote>
+<p>A DevOps mindset requires &ldquo;Highly effective, daily collaboration between software developers and IT operations people to produce relevant, working systems&rdquo; &mdash;<a href="https://skeltonthatcher.com/blog/a-useful-working-definition-of-devops/">https://skeltonthatcher.com/blog/a-useful-working-definition-of-devops/</a></p>
+
+<p>In order to build and operate the kinds of complex, distributed software systems required for 2018 and beyond, we need to emphasize effectiveness over efficiency for technical teams. Delivering changes rapidly, reliably, and repeatedly is not possible if we aim to minimize ‘costs’ at specific points of the value chain, as this kind of efficiency usually ends up causing unnecessary constraints. Instead, we should focus on flow and completion of work in progress. &mdash;<a href="https://devops-bootcamp.liatr.io/#/1/1.1-devops-defined">https://devops-bootcamp.liatr.io/#/1/1.1-devops-defined</a></p>
+</blockquote>
+
+<h1 id="what-is-terraform">What is Terraform?</h1>
+
+<p><a href="https://www.terraform.io/intro/index.html">Terraform</a> is IaC (Infastructure as Code) middleware that uses declarative markup to automate the lifecycle of cloud infastructure in a cloud vendor agnostic manner. I&rsquo;ll be using the <a href="https://github.com/terraform-providers/terraform-provider-aws">AWS Provider</a>, but you could easily deploy to Azure or GCP.</p>
+
+<h1 id="using-a-build-container">Using a Build Container</h1>
+
+<p>In this example, <a href="https://docs.docker.com/get-started/">Docker</a> is utilized to run a Terraform build container. The benefit of containerizing a build, is isolating build dependencies from the operating system. Common CI/CD platforms like <a href="https://circleci.com/product/#how-it-works">CircleCI</a> also use build containers, so this is a common approach. The container mounts a local plan and temporary folders to share Terraform state and SSH Keys. The entry point initializes Terraform. The plan creates a typical VPC, with internet gateway, a route table, private and public subnets, security group allowing HTTP Port 80 traffic to the client IP, and IAM role with access to S3. The Node.JS server source code is uploaded to a private S3 bucket. When the EC2 instance is created, user data copies the Node JS source from S3, and installs the server as a service. Terraform will print the public IP address of the Node server when the plan is complete.</p>
+
+<p>All you need is Linux, Docker, and an AWS account to get started.</p>
+
+<p>Check out the <a href="https://github.com/szahn/terraform-aws-automation">source code here</a>.</p>
+
+    <time class="faded">01 Mar 2019</time>
+  </div>
+</div>
+
+    </div> 
+    <footer>
+      <small>
+        &copy; 2019 <a href=http://stuartzahn.net>Stuart Zahn</a>.
+      </small>
+    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
+
